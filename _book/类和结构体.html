@@ -1,0 +1,687 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>类和结构体 | Swift学习资料整理</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    
+    
+    <link rel="next" href="./属性.html" />
+    
+    
+    <link rel="prev" href="./枚举.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book" data-level="8" data-basepath="." data-revision="1431913771131">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="基础.html">
+            
+                
+                    <a href="./基础.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         基础
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="字符串和字符.html">
+            
+                
+                    <a href="./字符串和字符.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         字符串和字符
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="集合.html">
+            
+                
+                    <a href="./集合.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         集合
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="控制语句.html">
+            
+                
+                    <a href="./控制语句.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         控制语句
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="函数.html">
+            
+                
+                    <a href="./函数.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="闭包.html">
+            
+                
+                    <a href="./闭包.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         闭包
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="枚举.html">
+            
+                
+                    <a href="./枚举.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         枚举
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="8" data-path="类和结构体.html">
+            
+                
+                    <a href="./类和结构体.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         类和结构体
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="属性.html">
+            
+                
+                    <a href="./属性.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         属性
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="下标脚本.html">
+            
+                
+                    <a href="./下标脚本.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         下标脚本
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="继承.html">
+            
+                
+                    <a href="./继承.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         继承
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="构造过程.html">
+            
+                
+                    <a href="./构造过程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         构造过程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="析构过程.html">
+            
+                
+                    <a href="./析构过程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         析构过程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="自动引用计数.html">
+            
+                
+                    <a href="./自动引用计数.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         自动引用计数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15" data-path="可选链.html">
+            
+                
+                    <a href="./可选链.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         可选链
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16" data-path="类型转换.html">
+            
+                
+                    <a href="./类型转换.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                         类型转换
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="17" data-path="嵌套类型.html">
+            
+                
+                    <a href="./嵌套类型.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                         嵌套类型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="18" data-path="扩展.html">
+            
+                
+                    <a href="./扩展.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>18.</b>
+                        
+                         扩展
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="19" data-path="协议.html">
+            
+                
+                    <a href="./协议.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>19.</b>
+                        
+                         协议
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="20" data-path="泛型.html">
+            
+                
+                    <a href="./泛型.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>20.</b>
+                        
+                         泛型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="21" data-path="权限控制.html">
+            
+                
+                    <a href="./权限控制.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>21.</b>
+                        
+                         权限控制
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Swift学习资料整理</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_5801">
+                    
+                        <h2 id="">类和结构体</h2>
+<h3 id="">目录</h3>
+<ul>
+<li><a href="#1.类和结构体对比">1.类和结构体对比</a></li>
+<li><a href="#2.定义">2.定义</a></li>
+<li><a href="#3.类和结构体实例">3.类和结构体实例</a></li>
+<li><a href="#4.属性访问">4.属性访问</a></li>
+<li><a href="#5.结构体类型的成员逐一构造器">5.结构体类型的成员逐一构造器</a></li>
+<li><a href="6.结构体和枚举是值类型">6.结构体和枚举是值类型</a></li>
+<li><a href="#7.类是引用类型">7.类是引用类型</a></li>
+<li><a href="#8.类和结构体的选择">8.类和结构体的选择</a></li>
+<li><a href="#9.集合（Collection）类型的赋值和拷贝行为">9.集合（Collection）类型的赋值和拷贝行为</a></li>
+</ul>
+<hr>
+<h3 id="1.类和结构体对比">1.类和结构体对比</h3>
+
+
+<p>Swift中类和结构体有很多共同点</p>
+<ul>
+<li>定义属性用于存储值</li>
+<li>定义方法用于提供功能</li>
+<li>定义附属脚本用于访问值</li>
+<li>定义构造器用于生成初始化值</li>
+<li>通过扩展以增加默认实现的功能</li>
+<li>符合协议以对某类提供标准功能</li>
+</ul>
+<p>与结构体相比，类还有如下的附加功能。</p>
+<ul>
+<li>继承允许一个雷继承另一个类的特征</li>
+<li>类型转换允许在运行时检查和解释一个类实例的类型</li>
+<li>解构器允许一个类实例释放任何其所被分配的资源</li>
+<li>引用计数器允许对一个类的多次引用</li>
+</ul>
+<h3 id="2.定义">2.定义</h3>
+
+<p>通过关键字<code>class</code>和<code>struct</code>来分别表示类和结构体，并在一对大括号中定义它们的具体内容。</p>
+<p>定义一个名为<code>Resolution</code>的结构体，用来描述一个显示器的分辨率。这个结构体包含两个名为<code>width</code>和<code>height</code>的存储属性。</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Resolution</span></span>{
+    <span class="hljs-keyword">var</span> width = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">var</span> height = <span class="hljs-number">0</span>
+}
+</code></pre>
+<p>定义一个名为<code>VideoMode</code>的类，用来描述一个视频显示器的特定模式。这个类包含了四个存储属性变量。第一个是分辨率。</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">VideoMode</span> </span>{
+    <span class="hljs-keyword">var</span> resolution = <span class="hljs-type">Resolution</span>()
+    <span class="hljs-keyword">var</span> interlaced = <span class="hljs-built_in">false</span>
+    <span class="hljs-keyword">var</span> frameRate = <span class="hljs-number">0.0</span>
+    <span class="hljs-keyword">var</span> name: <span class="hljs-type">String</span>?
+}
+</code></pre>
+<h3 id="3.类和结构体实例">3.类和结构体实例</h3>
+
+<pre><code class="lang-swift">
+<span class="hljs-keyword">let</span> someResolution = <span class="hljs-type">Resolution</span>()
+<span class="hljs-keyword">let</span> someVideoMode = <span class="hljs-type">VideoMode</span>()
+</code></pre>
+<h3 id="4.属性访问">4.属性访问</h3>
+
+<p>通过使用点语法，你可以访问实例中所含有的属性。其语法规则是，实例名后面紧跟属性名，两者通过点号(.)连接：</p>
+<pre><code class="lang-swift"><span class="hljs-built_in">println</span>(<span class="hljs-string">"The width of someResolution is <span class="hljs-subst">\(someResolution.width)</span>"</span>)
+<span class="hljs-comment">// 输出 "The width of someResolution is 0"</span>
+</code></pre>
+<p>你也可以访问子属性，如VideoMode中Resolution属性的width属性：</p>
+<pre><code class="lang-swift"><span class="hljs-built_in">println</span>(<span class="hljs-string">"The width of someVideoMode is <span class="hljs-subst">\(someVideoMode.resolution.width)</span>"</span>)
+<span class="hljs-comment">// 输出 "The width of someVideoMode is 0"</span>
+</code></pre>
+<p>你也可以使用点语法为属性变量赋值：</p>
+<pre><code class="lang-swift">someVideoMode.resolution.width = <span class="hljs-number">1280</span>
+<span class="hljs-built_in">println</span>(<span class="hljs-string">"The width of someVideoMode is now <span class="hljs-subst">\(someVideoMode.resolution.width)</span>"</span>)
+<span class="hljs-comment">// 输出 "The width of someVideoMode is now 1280"</span>
+</code></pre>
+<h3 id="5.结构体类型的成员逐一构造器">5.结构体类型的成员逐一构造器</h3>
+
+<p>所有结构体都有一个自动生成的成员<strong>逐一构造器</strong>，用于初始化新结构体实例中成员的属性。新实例中各个属性的初始值可以通过属性的名称传递到成员逐一构造器之中：</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> vga = <span class="hljs-type">Resolution</span>(width:<span class="hljs-number">640</span>, height: <span class="hljs-number">480</span>)
+</code></pre>
+<p>与结构体不同，<strong>类实例没有默认的成员逐一构造器</strong>。</p>
+<h3 id="6.结构体和枚举是值类型">6.结构体和枚举是值类型</h3>
+
+<pre><code class="lang-swift"> <span class="hljs-keyword">let</span> hd = <span class="hljs-type">Resolution</span>(width: <span class="hljs-number">1920</span>, height: <span class="hljs-number">1080</span>)
+
+<span class="hljs-keyword">var</span> cinema = hd
+
+cinema.width = <span class="hljs-number">2048</span>
+
+<span class="hljs-built_in">println</span>(<span class="hljs-string">"cinema is now  <span class="hljs-subst">\(cinema.width)</span> pixels wide"</span>)
+<span class="hljs-comment">// 输出 "cinema is now 2048 pixels wide"</span>
+<span class="hljs-built_in">println</span>(<span class="hljs-string">"hd is still <span class="hljs-subst">\(hd.width    )</span> pixels wide"</span>)
+<span class="hljs-comment">// 输出 "hd is still 1920 pixels wide"</span>
+</code></pre>
+<p>将<code>hd</code>赋值给<code>cinema</code>的时候，实际上是将<code>hd</code>中所存储的值进行拷贝。然后将拷贝的数据存储到新的<code>cinema</code>实例中。结果就是两个完全独立的实例碰巧包含有相同的数值。由于两者相互独立，因此将<code>cinema</code>的width修改为2048不会影响<code>hd</code>中的宽。</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">CompassPoint</span> </span>{
+    <span class="hljs-keyword">case</span> <span class="hljs-type">North</span>, <span class="hljs-type">South</span>, <span class="hljs-type">East</span>, <span class="hljs-type">West</span>
+}
+<span class="hljs-keyword">var</span> currentDirection = <span class="hljs-type">CompassPoint</span>.<span class="hljs-type">West</span>
+<span class="hljs-keyword">let</span> rememberedDirection = currentDirection
+currentDirection = .<span class="hljs-type">East</span>
+<span class="hljs-keyword">if</span> rememberDirection == .<span class="hljs-type">West</span> {
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"The remembered direction is still .West"</span>)
+}
+<span class="hljs-comment">// 输出 "The remembered direction is still .West"</span>
+</code></pre>
+<p>上例中<code>rememberedDirection</code>被赋予了<code>currentDirection</code>的值（value），实际上它被赋予的是值（value）的一个拷贝。赋值过程结束后再修改<code>currentDirection</code>的值并不影响<code>rememberedDirection</code>所储存的原始值（value）的拷贝。</p>
+<h3 id="7.类是引用类型">7.类是引用类型</h3>
+
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> tenEighty = <span class="hljs-type">VideoMode</span>()
+tenEighty.resolution = hd
+tenEighty.interlaced = <span class="hljs-built_in">true</span>
+tenEighty.name = <span class="hljs-string">"1080i"</span>
+tenEighty.frameRate = <span class="hljs-number">25.0</span>
+
+<span class="hljs-keyword">let</span> alsoTenEighty = tenEighty
+alsoTenEighty.frameRate = <span class="hljs-number">30.0</span>
+
+<span class="hljs-built_in">println</span>(<span class="hljs-string">"The frameRate property of tenEighty is now <span class="hljs-subst">\(tenEighty.frameRate)</span>"</span>)
+<span class="hljs-comment">// 输出 "The frameRate property of theEighty is now 30.0"</span>
+</code></pre>
+<p>因为类是引用类型，有可能有多个常量和变量在后台同时引用某一个类的实例。Swift内奸了两个恒等运算符</p>
+<ul>
+<li>等价于 （===）</li>
+<li>不等价于 （!==）</li>
+</ul>
+<p>以下是运用这两个运算符检测两个常量或者变脸是否引用同一个实例。</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">if</span> tenEighty === alsoTenTighty {
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"tenTighty and alsoTenEighty refer to the same Resolution instance."</span>)
+}
+<span class="hljs-comment">//输出 "tenEighty and alsoTenEighty refer to the same Resolution instance."</span>
+</code></pre>
+<h3 id="8.类和结构体的选择">8.类和结构体的选择</h3>
+
+<p>在你的代码中，你可以使用类和结构体来定义你的自定义数据类型。</p>
+<p>然而，结构体实例总是通过值传递，类实例总是通过引用传递。这意味两者适用不同的任务。当你在考虑一个工程项目的数据构造和功能的时候，你需要决定每个数据构造是定义成类还是结构体。</p>
+<p>按照通用的准则，当符合一条或多条以下条件时，请考虑构建结构体：</p>
+<ul>
+<li>结构体的主要目的是用来封装少量相关简单数据值。</li>
+<li>有理由预计一个结构体实例在赋值或传递时，封装的数据将会被拷贝而不是被引用。</li>
+<li>任何在结构体中储存的值类型属性，也将会被拷贝，而不是被引用。</li>
+<li><p>结构体不需要去继承另一个已存在类型的属性或者行为。
+合适的结构体候选者包括：</p>
+</li>
+<li><p>几何形状的大小，封装一个width属性和height属性，两者均为Double类型。</p>
+</li>
+<li>一定范围内的路径，封装一个start属性和length属性，两者均为Int类型。</li>
+<li>三维坐标系内一点，封装x，y和z属性，三者均为Double类型。</li>
+</ul>
+<p>在所有其它案例中，定义一个类，生成一个它的实例，并通过引用来管理和传递。实际中，这意味着绝大部分的自定义数据构造都应该是类，而非结构体。</p>
+<h3 id="9.集合（Collection）类型的赋值和拷贝行为">9.集合（Collection）类型的赋值和拷贝行为</h3>
+
+<p>Swift 中字符串（String）,数组（Array）和字典（Dictionary）类型均以结构体的形式实现。这意味着String，Array，Dictionary类型数据被赋值给新的常量(或变量），或者被传入函数（或方法）中时，它们的值会发生拷贝行为（值传递方式）。</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./枚举.html" class="navigation navigation-prev " aria-label="Previous page: 枚举"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./属性.html" class="navigation navigation-next " aria-label="Next page: 属性"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

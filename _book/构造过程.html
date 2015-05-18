@@ -1,0 +1,974 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>构造过程 | Swift学习资料整理</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    
+    
+    <link rel="next" href="./析构过程.html" />
+    
+    
+    <link rel="prev" href="./继承.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book" data-level="12" data-basepath="." data-revision="1431913771131">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="基础.html">
+            
+                
+                    <a href="./基础.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         基础
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="字符串和字符.html">
+            
+                
+                    <a href="./字符串和字符.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         字符串和字符
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="集合.html">
+            
+                
+                    <a href="./集合.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         集合
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="控制语句.html">
+            
+                
+                    <a href="./控制语句.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         控制语句
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="函数.html">
+            
+                
+                    <a href="./函数.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="闭包.html">
+            
+                
+                    <a href="./闭包.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         闭包
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="枚举.html">
+            
+                
+                    <a href="./枚举.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         枚举
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="类和结构体.html">
+            
+                
+                    <a href="./类和结构体.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         类和结构体
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="属性.html">
+            
+                
+                    <a href="./属性.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         属性
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="下标脚本.html">
+            
+                
+                    <a href="./下标脚本.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         下标脚本
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="继承.html">
+            
+                
+                    <a href="./继承.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         继承
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="12" data-path="构造过程.html">
+            
+                
+                    <a href="./构造过程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         构造过程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="析构过程.html">
+            
+                
+                    <a href="./析构过程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         析构过程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="自动引用计数.html">
+            
+                
+                    <a href="./自动引用计数.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         自动引用计数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15" data-path="可选链.html">
+            
+                
+                    <a href="./可选链.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         可选链
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16" data-path="类型转换.html">
+            
+                
+                    <a href="./类型转换.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                         类型转换
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="17" data-path="嵌套类型.html">
+            
+                
+                    <a href="./嵌套类型.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                         嵌套类型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="18" data-path="扩展.html">
+            
+                
+                    <a href="./扩展.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>18.</b>
+                        
+                         扩展
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="19" data-path="协议.html">
+            
+                
+                    <a href="./协议.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>19.</b>
+                        
+                         协议
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="20" data-path="泛型.html">
+            
+                
+                    <a href="./泛型.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>20.</b>
+                        
+                         泛型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="21" data-path="权限控制.html">
+            
+                
+                    <a href="./权限控制.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>21.</b>
+                        
+                         权限控制
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Swift学习资料整理</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_5794">
+                    
+                        <h2 id="">构造过程</h2>
+<h3 id="">目录</h3>
+<ul>
+<li><a href="#1.存储属性的初始赋值">1.存储属性的初始赋值</a><ul>
+<li><a href="#1.1构造器">1.1构造器</a></li>
+<li><a href="#1.2默认属性值">1.2默认属性值</a></li>
+</ul>
+</li>
+<li><a href="#2.定制化构造过程">2.定制化构造过程</a><ul>
+<li><a href="#2.1构造参数">2.1构造参数</a></li>
+<li><a href="#2.2内部和外部参数名">2.2内部和外部参数名</a></li>
+<li><a href="#2.3可选属性类型">2.3可选属性类型</a></li>
+<li><a href="#2.4构造过程中常量属性的修改">2.4构造过程中常量属性的修改</a></li>
+</ul>
+</li>
+<li><a href="#3.默认构造器">3.默认构造器</a></li>
+<li><a href="#4.值类型的构造器代理">4.值类型的构造器代理</a></li>
+<li><a href="#5.类的继承和构造过程">5.类的继承和构造过程</a><ul>
+<li><a href="#5.1指定构造器和便利构造器">5.1指定构造器和便利构造器</a></li>
+<li><a href="#5.2构造器链">5.2构造器链</a></li>
+<li><a href="#5.3两段式构造过程">5.3两段式构造过程</a></li>
+<li><a href="#5.4构造器的继承和重载">5.4构造器的继承和重载</a></li>
+<li><a href="#5.5自动构造器的继承载">5.5自动构造器的继承载</a></li>
+</ul>
+</li>
+<li><p><a href="#6.可失败构造器">6.可失败构造器</a></p>
+<ul>
+<li><a href="#6.1枚举类型的可失败构造器">6.1枚举类型的可失败构造器</a></li>
+<li><a href="#6.2带原始值的枚举类型的可失败构造器">6.2带原始值的枚举类型的可失败构造器</a></li>
+<li><a href="#6.3类的可失败构造器">6.3类的可失败构造器</a></li>
+<li><a href="#6.4构造失败的传递">6.4构造失败的传递</a></li>
+<li><a href="#6.5覆盖一个可失败构造器">6.5覆盖一个可失败构造器</a></li>
+</ul>
+</li>
+<li><p><a href="#7.必要构造器">7.必要构造器</a></p>
+</li>
+<li><a href="#8.通过闭包和函数来设置属性的默认值">8.通过闭包和函数来设置属性的默认值</a></li>
+</ul>
+<hr>
+<p><strong>构造过程是为了使用某个类、结构体或枚举类型的实例而进行的准备过程。</strong>这个过程包含了<strong>为实例中的每个属性设置初始值</strong>和<strong>为其执行必要的准备和初始化任务</strong>。</p>
+<p>构造过程是通过定义构造器（Initializers）来实现的，这些构造器可以看做是用来创建特定类型实例的特殊方法。</p>
+<p>类实例也可以通过定义析构器（deinitializer）在类实例释放之前执行特定的清除工作。</p>
+<h3 id="1.存储属性的初始赋值">1.存储属性的初始赋值</h3>
+
+<p><strong>类和结构体在实例创建时，必须为所有存储型属性设置合适的初始值。存储型属性的值不能处于一个未知的状态</strong>。</p>
+<p>你可以在构造器中为存储型属性赋初值，也可以在定义属性时为其设置默认值。</p>
+<p>当你为存储型属性设置默认值或者在构造器中为其赋值时，它们的值是被直接设置的，不会触发任何属性观察器。</p>
+<h4 id="1.1构造器">1.1构造器</h4>
+
+<p>构造器在创建某特定类型的新实例时调用。它的最简形式类似于一个不带任何参数的实例方法，以关键字init命名。</p>
+<p>下面例子中定义了一个用来保存华氏温度的结构体<code>Fahrenheit</code>，它拥有一个<code>Double</code>类型的存储型属性<code>temperature</code>：</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Fahrenheit</span> </span>{
+    <span class="hljs-keyword">var</span> temperature:<span class="hljs-type">Double</span>
+    <span class="hljs-keyword">init</span>(){
+        temperature = <span class="hljs-number">32.0</span>
+    }
+}
+
+<span class="hljs-keyword">var</span> f = <span class="hljs-type">Fahrenheit</span>()
+
+<span class="hljs-built_in">println</span>(<span class="hljs-string">"The default temperature is <span class="hljs-subst">\(f.temperature)</span>"</span>)
+<span class="hljs-comment">//打印 The default temperature is 32.0</span>
+</code></pre>
+<h4 id="1.2默认属性值">1.2默认属性值</h4>
+
+
+<pre><code class="lang-swift">
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Fahrenheit</span> </span>{
+    <span class="hljs-keyword">var</span> temperature = <span class="hljs-number">32.0</span>
+}
+
+<span class="hljs-keyword">var</span> f = <span class="hljs-type">Fahrenheit</span>()
+
+<span class="hljs-built_in">println</span>(<span class="hljs-string">"The default temperature is <span class="hljs-subst">\(f.temperature)</span>"</span>)
+<span class="hljs-comment">//打印 The default temperature is 32.0</span>
+</code></pre>
+<h3 id="2.定制化构造过程">2.定制化构造过程</h3>
+
+<h4 id="2.1构造参数">2.1构造参数</h4>
+
+<p>你可以在定义构造器时提供构造参数，为其提供定制化构造所需值的类型和名字。构造器参数的功能和语法跟函数和方法参数相同。</p>
+<p>下面例子中定义了一个包含摄氏度温度的结构体Celsius。它定义了两个不同的构造器：<code>init(fromFahrenheit:)</code>和<code>init(fromKelvin:)</code>，二者分别通过接受不同刻度表示的温度值来创建新的实例：</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Celsius</span> </span>{
+    <span class="hljs-keyword">var</span> temperatureInCelsius: <span class="hljs-type">Double</span> = <span class="hljs-number">0.0</span>
+    <span class="hljs-keyword">init</span>(fromFahrenheit fahrenheit: <span class="hljs-type">Double</span>) {
+        temperatureInCelsius = (fahrenheit - <span class="hljs-number">32.0</span>) / <span class="hljs-number">1.8</span>
+    }
+    <span class="hljs-keyword">init</span>(fromKelvin kelvin: <span class="hljs-type">Double</span>) {
+        temperatureInCelsius = kelvin - <span class="hljs-number">273.15</span>
+    }
+}
+
+<span class="hljs-keyword">let</span> boilingPointOfWater = <span class="hljs-type">Celsius</span>(fromFahrenheit: <span class="hljs-number">212.0</span>)
+<span class="hljs-comment">// boilingPointOfWater.temperatureInCelsius 是 100.0</span>
+<span class="hljs-keyword">let</span> freezingPointOfWater = <span class="hljs-type">Celsius</span>(fromKelvin: <span class="hljs-number">273.15</span>)
+<span class="hljs-comment">// freezingPointOfWater.temperatureInCelsius 是 0.0”</span>
+</code></pre>
+<h4 id="2.2内部和外部参数名">2.2内部和外部参数名</h4>
+
+<p>在调用构造器时，主要通过构造器中的参数名和类型来确定需要调用的构造器。正因为参数如此重要，<strong>如果你在定义构造器时没有提供参数的外部名字，Swift会为每个构造器的参数自动生成一个跟内部名字相同的外部名</strong>。</p>
+<p>上面的例子可以修改为：</p>
+<pre><code class="lang-java">struct Celsius{
+    var temperatureInCelsius:Double = <span class="hljs-number">0.0</span>
+
+    init(fahrenheit:Double){
+        temperatureInCelsius = (fahrenheit-<span class="hljs-number">32.0</span>)/<span class="hljs-number">1.8</span>
+    }
+
+    init(kelvin:Double){
+        temperatureInCelsius = kelvin - <span class="hljs-number">273.15</span>
+    }
+}
+
+let boilingPointOfWater = Celsius(fahrenheit: <span class="hljs-number">212</span>)
+
+println(boilingPointOfWater.temperatureInCelsius)
+<span class="hljs-comment">// 100.0</span>
+
+let freezingPointOfWater = Celsius(kelvin: <span class="hljs-number">273.15</span>)
+</code></pre>
+<p>如果不希望为构造器的某个参数提供外部名字，可以使用下划线<code>_</code>来描述它的外部名，覆盖默认行为。</p>
+<pre><code class="lang-java">struct Celsius{
+    var temperatureInCelsius:Double = <span class="hljs-number">0.0</span>
+
+    init( _ fahrenheit:Double){
+        temperatureInCelsius = (fahrenheit-<span class="hljs-number">32.0</span>)/<span class="hljs-number">1.8</span>
+    }
+
+    init(kelvin:Double){
+        temperatureInCelsius = kelvin - <span class="hljs-number">273.15</span>
+    }
+}
+
+let boilingPointOfWater = Celsius(<span class="hljs-number">212</span>)
+
+println(boilingPointOfWater.temperatureInCelsius)
+<span class="hljs-comment">// 100.0</span>
+
+let freezingPointOfWater = Celsius(kelvin: <span class="hljs-number">273.15</span>)
+</code></pre>
+<h4 id="2.3可选属性类型">2.3可选属性类型</h4>
+
+<p>可选类型的属性将自动初始化为<code>nil</code></p>
+<pre><code class="lang-swift">
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SurveyQuestion</span></span>{
+    <span class="hljs-keyword">var</span> text:<span class="hljs-type">String</span>
+    <span class="hljs-keyword">var</span> response:<span class="hljs-type">String</span>?
+    <span class="hljs-keyword">init</span>(text:<span class="hljs-type">String</span>){
+        <span class="hljs-keyword">self</span>.text = text
+    }
+    <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">ask</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-built_in">println</span>(text)
+    }
+}
+
+<span class="hljs-keyword">let</span> cheeseQuestion = <span class="hljs-type">SurveyQuestion</span>(text:<span class="hljs-string">"Do you like cheese?"</span>)
+
+cheeseQuestion.ask()
+
+cheeseQuestion.response = <span class="hljs-string">"Yes , I do like cheese"</span>
+</code></pre>
+<h4 id="2.4构造过程中常量属性的修改">2.4构造过程中常量属性的修改</h4>
+
+<p>只要在构造过程结束前常量的值能确定，你可以在构造过程中的任意时间点修改常量属性的值。</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SurveyQuestion</span></span>{
+    <span class="hljs-keyword">let</span> text:<span class="hljs-type">String</span>
+    <span class="hljs-keyword">var</span> response:<span class="hljs-type">String</span>?
+    <span class="hljs-keyword">init</span>(text:<span class="hljs-type">String</span>){
+        <span class="hljs-keyword">self</span>.text = text
+    }
+    <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">ask</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-built_in">println</span>(text)
+    }
+}
+
+<span class="hljs-keyword">let</span> cheeseQuestion = <span class="hljs-type">SurveyQuestion</span>(text:<span class="hljs-string">"Do you like cheese?"</span>)
+
+cheeseQuestion.ask()
+
+cheeseQuestion.response = <span class="hljs-string">"Yes , I do like cheese"</span>
+</code></pre>
+<h3 id="3.默认构造器">3.默认构造器</h3>
+
+<p>Swift为所有属性已提供默认值切自身没有定义任何构造器的结构体或基类，提供一个默认的构造器。</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ShoppingListItem</span></span>{
+    <span class="hljs-keyword">var</span> name:<span class="hljs-type">String</span>?
+    <span class="hljs-keyword">var</span> quantity = <span class="hljs-number">1</span>
+    <span class="hljs-keyword">var</span> purchased = <span class="hljs-built_in">false</span>
+}
+
+<span class="hljs-keyword">var</span> item = <span class="hljs-type">ShoppingListItem</span>()
+</code></pre>
+<h3 id="4.值类型的构造器代理">4.值类型的构造器代理</h3>
+
+<p>构造器可以通过调用其它构造器来完成实例部分构造过程。这一过程称为构造器代理，它能减少多个构造器间的代码重复。</p>
+<p>如果你为某个值类型定义了一个定制的构造器，你将无法访问到默认构造器，如果是结构体，则无法访问逐一对象构造器。</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Size</span></span>{
+    <span class="hljs-keyword">var</span> width = <span class="hljs-number">0.0</span>,height = <span class="hljs-number">0.0</span>
+}
+
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Point</span> </span>{
+    <span class="hljs-keyword">var</span> x = <span class="hljs-number">0.0</span>, y=<span class="hljs-number">0.0</span>
+}
+
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Rect</span> </span>{
+    <span class="hljs-keyword">var</span> origin = <span class="hljs-type">Point</span>()
+    <span class="hljs-keyword">var</span> size = <span class="hljs-type">Size</span>()
+    <span class="hljs-keyword">init</span>(){}
+    <span class="hljs-keyword">init</span>(origin:<span class="hljs-type">Point</span>,size:<span class="hljs-type">Size</span>){
+        <span class="hljs-keyword">self</span>.origin = origin
+        <span class="hljs-keyword">self</span>.size = size
+    }
+    <span class="hljs-comment">//</span>
+    <span class="hljs-keyword">init</span>(center:<span class="hljs-type">Point</span>,size:<span class="hljs-type">Size</span>){
+        <span class="hljs-keyword">let</span> originX = center.x - (size.width/<span class="hljs-number">2</span>)
+        <span class="hljs-keyword">let</span> originY = center.y - (size.height/<span class="hljs-number">2</span>)
+        <span class="hljs-keyword">self</span>.<span class="hljs-keyword">init</span>(origin:<span class="hljs-type">Point</span>(x: originX, y: originY),size:size)
+    }
+}
+
+<span class="hljs-comment">// 调用第一个构造器</span>
+
+<span class="hljs-keyword">let</span> basicRect = <span class="hljs-type">Rect</span>()
+
+<span class="hljs-comment">// 调用第二个构造器</span>
+
+<span class="hljs-keyword">let</span> originRect = <span class="hljs-type">Rect</span>(origin: <span class="hljs-type">Point</span>(x: <span class="hljs-number">2.0</span>, y: <span class="hljs-number">2.0</span>), size: <span class="hljs-type">Size</span>(width: <span class="hljs-number">5.0</span>, height: <span class="hljs-number">5.0</span>))
+
+<span class="hljs-comment">//调用第三个构造器</span>
+
+<span class="hljs-keyword">let</span> centerRect = <span class="hljs-type">Rect</span>(center: <span class="hljs-type">Point</span>(x: <span class="hljs-number">4.0</span>, y: <span class="hljs-number">4.0</span>), size: <span class="hljs-type">Size</span>(width: <span class="hljs-number">3.0</span>, height: <span class="hljs-number">3.0</span>))
+</code></pre>
+<h3 id="5.类的继承和构造过程">5.类的继承和构造过程</h3>
+
+<p>类里面的所有存储属性，包括所有继承自父类的属性，都必须在构造过程中设置初始值。</p>
+<p>Swift提供了两种类型的类构造器来确保所有类实例中存储属性都能获得初始值，它们分别是<strong>指定构造器和便利构造器</strong>。</p>
+<h4 id="5.1指定构造器和便利构造器">5.1指定构造器和便利构造器</h4>
+
+<pre><code class="lang-swift">
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Food</span> </span>{
+    <span class="hljs-keyword">var</span> name:<span class="hljs-type">String</span>
+    <span class="hljs-keyword">init</span>(name:<span class="hljs-type">String</span>){
+        <span class="hljs-keyword">self</span>.name = name
+    }
+
+    convenience <span class="hljs-keyword">init</span>(){
+        <span class="hljs-keyword">self</span>.<span class="hljs-keyword">init</span>(name:<span class="hljs-string">"[Unnamed]"</span>)
+    }
+
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RecipeIngredient</span>: <span class="hljs-title">Food</span> </span>{
+    <span class="hljs-keyword">var</span> quantity:<span class="hljs-type">Int</span>
+
+    <span class="hljs-keyword">init</span>(name:<span class="hljs-type">String</span>,quantity:<span class="hljs-type">Int</span>){
+        <span class="hljs-keyword">self</span>.quantity = quantity
+        <span class="hljs-keyword">super</span>.<span class="hljs-keyword">init</span>(name:name)
+    }
+    <span class="hljs-keyword">override</span> convenience <span class="hljs-keyword">init</span>(name:<span class="hljs-type">String</span>){
+        <span class="hljs-keyword">self</span>.<span class="hljs-keyword">init</span>(name:name,quantity:<span class="hljs-number">1</span>)
+    }
+}
+<span class="hljs-comment">// RecipeIngredient 提供了两个构造器，还继承了Food的init()构造器</span>
+
+<span class="hljs-keyword">let</span> oneMysteryItem = <span class="hljs-type">RecipeIngredient</span>()
+
+<span class="hljs-keyword">let</span> oneBacon = <span class="hljs-type">RecipeIngredient</span>(name: <span class="hljs-string">"Bacon"</span>)
+
+<span class="hljs-keyword">let</span> sixEggs = <span class="hljs-type">RecipeIngredient</span>(name: <span class="hljs-string">"Eggs"</span>,quantity:<span class="hljs-number">6</span>)
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ShoppingListItem</span>: <span class="hljs-title">RecipeIngredient</span> </span>{
+    <span class="hljs-keyword">var</span> purchased = <span class="hljs-built_in">false</span>
+    <span class="hljs-keyword">var</span> description: <span class="hljs-type">String</span> {
+        <span class="hljs-keyword">var</span> output = <span class="hljs-string">"<span class="hljs-subst">\(quantity)</span> x <span class="hljs-subst">\(name.lowercaseString)</span>"</span>
+        output += purchased ? <span class="hljs-string">" ✔"</span> : <span class="hljs-string">" ✘"</span>
+        <span class="hljs-keyword">return</span> output
+    }
+}
+
+<span class="hljs-keyword">var</span> breakfastList = [
+    <span class="hljs-type">ShoppingListItem</span>(),
+    <span class="hljs-type">ShoppingListItem</span>(name: <span class="hljs-string">"Bacon"</span>),
+    <span class="hljs-type">ShoppingListItem</span>(name: <span class="hljs-string">"Eggs"</span>, quantity: <span class="hljs-number">6</span>),
+]
+breakfastList[<span class="hljs-number">0</span>].name = <span class="hljs-string">"Orange juice"</span>
+breakfastList[<span class="hljs-number">0</span>].purchased = <span class="hljs-built_in">true</span>
+<span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> breakfastList {
+    <span class="hljs-built_in">println</span>(item.description)
+}
+</code></pre>
+<h4 id="5.2构造器链">5.2构造器链</h4>
+
+<h4 id="5.3两段式构造过程">5.3两段式构造过程</h4>
+
+<h4 id="5.4构造器的继承和重载">5.4构造器的继承和重载</h4>
+
+<h4 id="5.5自动构造器的继承">5.5自动构造器的继承载</h4>
+
+<h3 id="6.可失败构造器">6.可失败构造器</h3>
+
+<p>如果一个类，结构体或枚举类型的对象，在构造自身的过程中有可能失败，则为其定义一个可失败构造器，是非常有必要的。这里所指的“失败”是指，如给构造器传入无效的参数值，或缺少某种所需的外部资源，又或是不满足某种必要的条件等。</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Animal</span> </span>{
+    <span class="hljs-keyword">let</span> species:<span class="hljs-type">String</span>
+    <span class="hljs-keyword">init</span>?(species:<span class="hljs-type">String</span>){
+        <span class="hljs-keyword">if</span> species.isEmpty{
+            <span class="hljs-keyword">return</span> <span class="hljs-built_in">nil</span>
+        }
+        <span class="hljs-keyword">self</span>.species = species
+    }
+}
+
+<span class="hljs-comment">// someCreature 累形式Animal? 而不是Animal</span>
+<span class="hljs-keyword">let</span> someCreature = <span class="hljs-type">Animal</span>(species: <span class="hljs-string">"Giraffe"</span>)
+
+<span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> giraffe = someCreature{
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"An animal was initialied with a species of <span class="hljs-subst">\(someCreature!.species)</span>"</span>)
+}
+
+<span class="hljs-keyword">let</span> anonymousCreature = <span class="hljs-type">Animal</span>(species: <span class="hljs-string">""</span>)
+
+<span class="hljs-keyword">if</span> anonymousCreature == <span class="hljs-built_in">nil</span>{
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"The anonymous creature could not be initialized"</span>)
+}
+</code></pre>
+<h4 id="6.1枚举类型的可失败构造器">6.1枚举类型的可失败构造器</h4>
+
+<pre><code class="lang-swift">
+<span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">TemperatureUnit</span></span>{
+    <span class="hljs-keyword">case</span> <span class="hljs-type">Kelvin</span>,<span class="hljs-type">Celsius</span>,<span class="hljs-type">Fahrenheit</span>
+    <span class="hljs-keyword">init</span>?(symbol:<span class="hljs-type">Character</span>){
+        <span class="hljs-keyword">switch</span>(symbol){
+            <span class="hljs-keyword">case</span> <span class="hljs-string">"K"</span>:
+                <span class="hljs-keyword">self</span> = .<span class="hljs-type">Kelvin</span>
+            <span class="hljs-keyword">case</span> <span class="hljs-string">"C"</span>:
+                <span class="hljs-keyword">self</span> = .<span class="hljs-type">Celsius</span>
+            <span class="hljs-keyword">case</span> <span class="hljs-string">"F"</span>:
+                <span class="hljs-keyword">self</span> = .<span class="hljs-type">Fahrenheit</span>
+            <span class="hljs-keyword">default</span>:
+                <span class="hljs-keyword">return</span> <span class="hljs-built_in">nil</span>
+        }
+    }
+}
+
+<span class="hljs-keyword">let</span> fahrenheitUnit = <span class="hljs-type">TemperatureUnit</span>(symbol: <span class="hljs-string">"F"</span>)
+<span class="hljs-keyword">if</span> fahrenheitUnit != <span class="hljs-built_in">nil</span> {
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"This is a defined temperature unit, so initialization succeeded."</span>)
+}
+<span class="hljs-comment">// 打印 "This is a defined temperature unit, so initialization succeeded."</span>
+
+<span class="hljs-keyword">let</span> unknownUnit = <span class="hljs-type">TemperatureUnit</span>(symbol: <span class="hljs-string">"X"</span>)
+<span class="hljs-keyword">if</span> unknownUnit == <span class="hljs-built_in">nil</span> {
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"This is not a defined temperature unit, so initialization failed."</span>)
+}
+<span class="hljs-comment">// 打印 "This is not a defined temperature unit, so initialization failed."</span>
+</code></pre>
+<h4 id="6.2带原始值的枚举类型的可失败构造器器">6.2带原始值的枚举类型的可失败构造器</h4>
+
+<p>带原始值的枚举类型会自带一个课失败构造器<code>init?(rawValue)</code>。</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">TemperatureUnit</span>:<span class="hljs-title">Character</span></span>{
+    <span class="hljs-keyword">case</span> <span class="hljs-type">Kelvin</span>=<span class="hljs-string">"K"</span>,<span class="hljs-type">Celsius</span>=<span class="hljs-string">"C"</span>,<span class="hljs-type">Fahrenheit</span>=<span class="hljs-string">"F"</span>
+}
+
+<span class="hljs-keyword">let</span> fahrenheitUnit = <span class="hljs-type">TemperatureUnit</span>(rawValue: <span class="hljs-string">"F"</span>)
+
+<span class="hljs-keyword">if</span> fahrenheitUnit != <span class="hljs-built_in">nil</span> {
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"This is a defined temperature unit, so initialization succeeded."</span>)
+}
+<span class="hljs-comment">// prints "This is a defined temperature unit, so initialization succeeded."</span>
+
+<span class="hljs-keyword">let</span> unknownUnit = <span class="hljs-type">TemperatureUnit</span>(rawValue: <span class="hljs-string">"X"</span>)
+<span class="hljs-keyword">if</span> unknownUnit == <span class="hljs-built_in">nil</span> {
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"This is not a defined temperature unit, so initialization failed."</span>)
+}
+<span class="hljs-comment">// prints "This is not a defined temperature unit, so initialization failed."</span>
+</code></pre>
+<h4 id="6.3类的可失败构造器">6.3类的可失败构造器</h4>
+
+<p>值类型的可失败构造器，对何时何地触发构造失败这个行为没有任何的限制。类的可失败构造器只能在所有的属性被初始化后，所有类之间的构造器之间的代理调用发生完后触发失败行为。</p>
+<pre><code class="lang-swift">
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Product</span></span>{
+    <span class="hljs-comment">// 定义为可选类型，来确保失败构造器触发失败条件</span>
+    <span class="hljs-keyword">var</span> name:<span class="hljs-type">String</span>?
+    <span class="hljs-keyword">init</span>?(name:<span class="hljs-type">String</span>){
+        <span class="hljs-keyword">if</span> name.isEmpty{
+            <span class="hljs-keyword">return</span> <span class="hljs-built_in">nil</span>
+        }
+        <span class="hljs-keyword">self</span>.name=name
+    }
+}
+
+<span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> bowTie = <span class="hljs-type">Product</span>(name: <span class="hljs-string">"bow tie"</span>) {
+    <span class="hljs-comment">// 不需要检查 bowTie.name == nil</span>
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"The product's name is <span class="hljs-subst">\(bowTie.name)</span>"</span>)
+}
+<span class="hljs-comment">// 打印 "The product's name is bow tie"</span>
+</code></pre>
+<h4 id="6.4构造失败的传递">6.4构造失败的传递</h4>
+
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CartItem</span>: <span class="hljs-title">Product</span> </span>{
+    <span class="hljs-keyword">var</span> quantity:<span class="hljs-type">Int</span>!
+    <span class="hljs-keyword">init</span>?(name:<span class="hljs-type">String</span>,quantity:<span class="hljs-type">Int</span>){
+        <span class="hljs-keyword">super</span>.<span class="hljs-keyword">init</span>(name: name)
+        <span class="hljs-keyword">if</span> quantity &lt; <span class="hljs-number">1</span>{
+           <span class="hljs-keyword">return</span> <span class="hljs-built_in">nil</span>
+        }
+        <span class="hljs-keyword">self</span>.quantity=quantity
+    }
+
+}
+
+<span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> twoSocks = <span class="hljs-type">CartItem</span>(name: <span class="hljs-string">"sock"</span>, quantity: <span class="hljs-number">2</span>) {
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"Item: <span class="hljs-subst">\(twoSocks.name)</span>, quantity: <span class="hljs-subst">\(twoSocks.quantity)</span>"</span>)
+}
+<span class="hljs-comment">// 打印 "Item: sock, quantity: 2"</span>
+
+<span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> zeroShirts = <span class="hljs-type">CartItem</span>(name: <span class="hljs-string">"shirt"</span>, quantity: <span class="hljs-number">0</span>) {
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"Item: <span class="hljs-subst">\(zeroShirts.name)</span>, quantity: <span class="hljs-subst">\(zeroShirts.quantity)</span>"</span>)
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"Unable to initialize zero shirts"</span>)
+}
+<span class="hljs-comment">// 打印 "Unable to initialize zero shirts"</span>
+
+<span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> oneUnnamed = <span class="hljs-type">CartItem</span>(name: <span class="hljs-string">""</span>, quantity: <span class="hljs-number">1</span>) {
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"Item: <span class="hljs-subst">\(oneUnnamed.name)</span>, quantity: <span class="hljs-subst">\(oneUnnamed.quantity)</span>"</span>)
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"Unable to initialize one unnamed product"</span>)
+}
+<span class="hljs-comment">// 打印 "Unable to initialize one unnamed product"</span>
+</code></pre>
+<h4 id="6.5覆盖一个可失败构造器">6.5覆盖一个可失败构造器</h4>
+
+
+
+<h3 id="7.必要构造器">7.必要构造器</h3>
+
+<h3 id="8.通过闭包和函数来设置属性的默认值">8.通过闭包和函数来设置属性的默认值</h3>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./继承.html" class="navigation navigation-prev " aria-label="Previous page: 继承"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./析构过程.html" class="navigation navigation-next " aria-label="Next page: 析构过程"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

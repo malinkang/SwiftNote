@@ -1,0 +1,647 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>枚举 | Swift学习资料整理</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    
+    
+    <link rel="next" href="./类和结构体.html" />
+    
+    
+    <link rel="prev" href="./闭包.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book" data-level="7" data-basepath="." data-revision="1431913771131">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="基础.html">
+            
+                
+                    <a href="./基础.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         基础
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="字符串和字符.html">
+            
+                
+                    <a href="./字符串和字符.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         字符串和字符
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="集合.html">
+            
+                
+                    <a href="./集合.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         集合
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="控制语句.html">
+            
+                
+                    <a href="./控制语句.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         控制语句
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="函数.html">
+            
+                
+                    <a href="./函数.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="闭包.html">
+            
+                
+                    <a href="./闭包.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         闭包
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="7" data-path="枚举.html">
+            
+                
+                    <a href="./枚举.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         枚举
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="类和结构体.html">
+            
+                
+                    <a href="./类和结构体.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         类和结构体
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="属性.html">
+            
+                
+                    <a href="./属性.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         属性
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="下标脚本.html">
+            
+                
+                    <a href="./下标脚本.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         下标脚本
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="继承.html">
+            
+                
+                    <a href="./继承.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         继承
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="构造过程.html">
+            
+                
+                    <a href="./构造过程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         构造过程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="析构过程.html">
+            
+                
+                    <a href="./析构过程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         析构过程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="自动引用计数.html">
+            
+                
+                    <a href="./自动引用计数.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         自动引用计数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15" data-path="可选链.html">
+            
+                
+                    <a href="./可选链.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         可选链
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16" data-path="类型转换.html">
+            
+                
+                    <a href="./类型转换.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                         类型转换
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="17" data-path="嵌套类型.html">
+            
+                
+                    <a href="./嵌套类型.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                         嵌套类型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="18" data-path="扩展.html">
+            
+                
+                    <a href="./扩展.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>18.</b>
+                        
+                         扩展
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="19" data-path="协议.html">
+            
+                
+                    <a href="./协议.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>19.</b>
+                        
+                         协议
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="20" data-path="泛型.html">
+            
+                
+                    <a href="./泛型.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>20.</b>
+                        
+                         泛型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="21" data-path="权限控制.html">
+            
+                
+                    <a href="./权限控制.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>21.</b>
+                        
+                         权限控制
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Swift学习资料整理</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_5798">
+                    
+                        <h2 id="">枚举</h2>
+<h3 id="">目录</h3>
+<ul>
+<li><a href="#1.创建枚举">1.创建枚举</a></li>
+<li><a href="#2.匹配枚举值和Switch语句">2.匹配枚举值和Switch语句</a></li>
+<li><a href="#3.相关值">3.相关值</a></li>
+<li><a href="#4.原始值">4.原始值</a></li>
+</ul>
+<hr>
+<h3 id="1.创建枚举">1.创建枚举</h3>
+
+<p>使用<code>enum</code>关键词并且把它们整个定义在一对大括号内：</p>
+<pre><code class="lang-swift">
+<span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">CompassPoint</span></span>{
+    <span class="hljs-keyword">case</span> <span class="hljs-type">North</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-type">South</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-type">East</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-type">West</span>
+}
+</code></pre>
+<p>一个枚举中被定义的值（例如 North，South，East和West）是枚举的<strong>成员值</strong>（或者成员）。case关键词表明新的一行成员值将被定义。</p>
+<p>多个成员值可以出现在同一行上，用逗号隔开：</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">Planet</span> </span>{
+  <span class="hljs-keyword">case</span> <span class="hljs-type">Mercury</span>, <span class="hljs-type">Venus</span>, <span class="hljs-type">Earth</span>, <span class="hljs-type">Mars</span>, <span class="hljs-type">Jupiter</span>, <span class="hljs-type">Saturn</span>, <span class="hljs-type">Uranus</span>, <span class="hljs-type">Neptune</span>
+}
+</code></pre>
+<p>将枚举返回给一个变量</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> directionToHead = <span class="hljs-type">CompassPoint</span>.<span class="hljs-type">West</span>
+</code></pre>
+<p>directionToHead的类型被推断当它被CompassPoint的一个可能值初始化。一旦directionToHead被声明为一个CompassPoint，你可以使用更短的点（.）语法将其设置为另一个CompassPoint的值：</p>
+<pre><code class="lang-swift">directionToHead = .<span class="hljs-type">East</span>
+</code></pre>
+<h3 id="2.匹配枚举值和Switch语句">2.匹配枚举值和Switch语句</h3>
+
+<pre><code class="lang-swift">directionToHead = .<span class="hljs-type">South</span>
+<span class="hljs-keyword">switch</span> directionToHead {
+<span class="hljs-keyword">case</span> .<span class="hljs-type">North</span>:
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"Lots of planets have a north"</span>)
+<span class="hljs-keyword">case</span> .<span class="hljs-type">South</span>:
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"Watch out for penguins"</span>)
+<span class="hljs-keyword">case</span> .<span class="hljs-type">East</span>:
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"Where the sun rises"</span>)
+<span class="hljs-keyword">case</span> .<span class="hljs-type">West</span>:
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"Where the skies are blue"</span>)
+}
+</code></pre>
+<h3 id="3.相关值">3.相关值</h3>
+
+<p>如果能够把其他类型的<strong>相关值</strong>和成员值一起存储起来会很有用。</p>
+<p>假设一个库存跟踪系统需要利用两种不同类型的条形码来跟踪商品。有些商品上标有 UPC-A 格式的一维码，它使用数字 0 到 9。每一个条形码都有一个代表“数字系统”的数字，该数字后接 10 个代表“标识符”的数字。最后一个数字是“检查”位，用来验证代码是否被正确扫描。其他商品上标有 QR 码格式的二维码，它可以使用任何 ISO8859-1 字符，并且可以编码一个最多拥有 2,953 字符的字符串。对于库存跟踪系统来说，能够把 UPC-A 码作为三个整型值的元组，和把 QR 码作为一个任何长度的字符串存储起来是方便的。</p>
+<p>对于库存跟踪系统来说，能够把 UPC-A 码作为三个整型值的元组，和把 QR 码作为一个任何长度的字符串存储起来是方便的。</p>
+<pre><code class="lang-swfit">enum Barcode {
+  case UPCA(Int, Int, Int)
+  case QRCode(String)
+}
+</code></pre>
+<pre><code class="lang-swfit">
+var productBarcode = Barcode.UPCA(8, 85909_51226, 3)
+
+productBarcode = .QRCode(&quot;ABCDEFGHIJKLMNOP&quot;)
+</code></pre>
+<p>相关值可以被提取作为 switch 语句的一部分。你可以在switch的 case 分支代码中提取每个相关值作为一个常量（用let前缀）或者作为一个变量（用var前缀）来使用：</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">switch</span> productBarcode {
+<span class="hljs-keyword">case</span> .<span class="hljs-type">UPCA</span>(<span class="hljs-keyword">let</span> numberSystem, <span class="hljs-keyword">let</span> identifier, <span class="hljs-keyword">let</span> check):
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"UPC-A with value of <span class="hljs-subst">\(numberSystem)</span>, <span class="hljs-subst">\(identifier)</span>, <span class="hljs-subst">\(check)</span>."</span>)
+<span class="hljs-keyword">case</span> .<span class="hljs-type">QRCode</span>(<span class="hljs-keyword">let</span> productCode):
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"QR code with value of <span class="hljs-subst">\(productCode)</span>."</span>)
+}
+</code></pre>
+<p>如果一个枚举成员的所有相关值被提取为常量或者变量，为了简洁，你可以只放置一个var或者let标注在成员名称前：</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">switch</span> productBarcode {
+<span class="hljs-keyword">case</span> <span class="hljs-keyword">let</span> .<span class="hljs-type">UPCA</span>(numberSystem, identifier, check):
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"UPC-A with value of <span class="hljs-subst">\(numberSystem)</span>, <span class="hljs-subst">\(identifier)</span>, <span class="hljs-subst">\(check)</span>."</span>)
+<span class="hljs-keyword">case</span> <span class="hljs-keyword">let</span> .<span class="hljs-type">QRCode</span>(productCode):
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"QR code with value of <span class="hljs-subst">\(productCode)</span>."</span>)
+}
+<span class="hljs-comment">// 输出 "QR code with value of ABCDEFGHIJKLMNOP."</span>
+</code></pre>
+<h3 id="4.原始值">4.原始值</h3>
+
+<p>枚举成员可以被<strong>原始值</strong>预先填充，这些原始值具有相同的类型。原始值可以是字符串，字符，或者任何整型值或浮点型值。每个原始值在它的枚举声明中必须是唯一的。当整型值被用于原始值，如果其他枚举成员没有值时，它们会自动递增。</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">enum</span> <span class="hljs-title">Planet</span>: <span class="hljs-title">Int</span> </span>{
+    <span class="hljs-keyword">case</span> <span class="hljs-type">Mercury</span> = <span class="hljs-number">1</span>, <span class="hljs-type">Venus</span>, <span class="hljs-type">Earth</span>, <span class="hljs-type">Mars</span>, <span class="hljs-type">Jupiter</span>, <span class="hljs-type">Saturn</span>, <span class="hljs-type">Uranus</span>, <span class="hljs-type">Neptune</span>
+}
+</code></pre>
+<p>自动递增意味着Planet.Venus的原始值是2，依次类推。</p>
+<p>使用枚举成员的<code>rawValue</code>属性可以访问该枚举成员的原始值：</p>
+<pre><code class="lang-swift">
+<span class="hljs-keyword">let</span> earthsOrder = <span class="hljs-type">Planet</span>.<span class="hljs-type">Earth</span>.rawValue
+<span class="hljs-comment">// earthsOrder is 3</span>
+</code></pre>
+<p>通过参数为rawValue构造函数创建特定原始值的枚举。这个例子通过原始值7识别Uranus：</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> possiblePlanet = <span class="hljs-type">Planet</span>(rawValue: <span class="hljs-number">7</span>)
+<span class="hljs-comment">// possiblePlanet is of type Planet? and equals Planet.Uranus</span>
+</code></pre>
+<p>并非所有可能的Int值都可以找到一个匹配的行星。正因为如此，构造函数可以返回一个可选的枚举成员。在上面的例子中，possiblePlanet是Planet?类型，或“可选的Planet”。</p>
+<pre><code class="lang-swift">
+<span class="hljs-keyword">let</span> positionToFind = <span class="hljs-number">9</span>
+<span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> somePlanet = <span class="hljs-type">Planet</span>(rawValue: positionToFind) {
+    <span class="hljs-keyword">switch</span> somePlanet {
+    <span class="hljs-keyword">case</span> .<span class="hljs-type">Earth</span>:
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"Mostly harmless"</span>)
+    <span class="hljs-keyword">default</span>:
+        <span class="hljs-built_in">println</span>(<span class="hljs-string">"Not a safe place for humans"</span>)
+    }
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"There isn't a planet at position <span class="hljs-subst">\(positionToFind)</span>"</span>)
+}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./闭包.html" class="navigation navigation-prev " aria-label="Previous page: 闭包"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./类和结构体.html" class="navigation navigation-next " aria-label="Next page: 类和结构体"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

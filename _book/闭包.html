@@ -1,0 +1,625 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>闭包 | Swift学习资料整理</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    
+    
+    <link rel="next" href="./枚举.html" />
+    
+    
+    <link rel="prev" href="./函数.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book" data-level="6" data-basepath="." data-revision="1431913771131">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="基础.html">
+            
+                
+                    <a href="./基础.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         基础
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="字符串和字符.html">
+            
+                
+                    <a href="./字符串和字符.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         字符串和字符
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="集合.html">
+            
+                
+                    <a href="./集合.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         集合
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="控制语句.html">
+            
+                
+                    <a href="./控制语句.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         控制语句
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="函数.html">
+            
+                
+                    <a href="./函数.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="6" data-path="闭包.html">
+            
+                
+                    <a href="./闭包.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         闭包
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="枚举.html">
+            
+                
+                    <a href="./枚举.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         枚举
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="类和结构体.html">
+            
+                
+                    <a href="./类和结构体.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         类和结构体
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="属性.html">
+            
+                
+                    <a href="./属性.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         属性
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="下标脚本.html">
+            
+                
+                    <a href="./下标脚本.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         下标脚本
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="继承.html">
+            
+                
+                    <a href="./继承.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         继承
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="构造过程.html">
+            
+                
+                    <a href="./构造过程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         构造过程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="析构过程.html">
+            
+                
+                    <a href="./析构过程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         析构过程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="自动引用计数.html">
+            
+                
+                    <a href="./自动引用计数.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         自动引用计数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15" data-path="可选链.html">
+            
+                
+                    <a href="./可选链.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         可选链
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16" data-path="类型转换.html">
+            
+                
+                    <a href="./类型转换.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                         类型转换
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="17" data-path="嵌套类型.html">
+            
+                
+                    <a href="./嵌套类型.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                         嵌套类型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="18" data-path="扩展.html">
+            
+                
+                    <a href="./扩展.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>18.</b>
+                        
+                         扩展
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="19" data-path="协议.html">
+            
+                
+                    <a href="./协议.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>19.</b>
+                        
+                         协议
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="20" data-path="泛型.html">
+            
+                
+                    <a href="./泛型.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>20.</b>
+                        
+                         泛型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="21" data-path="权限控制.html">
+            
+                
+                    <a href="./权限控制.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>21.</b>
+                        
+                         权限控制
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Swift学习资料整理</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_5807">
+                    
+                        <h2 id="">闭包</h2>
+<h3 id="">目录</h3>
+<ul>
+<li><a href="#1.闭包表达式">1.闭包表达式</a><ul>
+<li><a href="#1.1闭包表达式语法">1.1闭包表达式语法</a></li>
+<li><a href="#1.2根据上下文推断类型">1.2根据上下文推断类型</a></li>
+<li><a href="#1.3单表达式闭包隐式返回">1.3单表达式闭包隐式返回</a></li>
+<li><a href="#1.4参数名称缩写">1.4参数名称缩写</a></li>
+<li><a href="#1.5运算符函数">1.5运算符函数</a></li>
+</ul>
+</li>
+<li><a href="#2.尾随闭包">2.尾随闭包</a></li>
+<li><a href="#3.捕获值">3.捕获值</a></li>
+<li><a href="#4.闭包是引用类型">4.闭包是引用类型</a></li>
+</ul>
+<hr>
+<p>闭包可以捕获和存储其所在上下文中任意常量和变量的引用。这就是所谓的闭合并包裹着这些常量和变量，俗称闭包。Swift会为你管理在捕获过程中涉及到的所有内存操作。闭包是自包含的函数代码块，可以在代码中被传递和使用。</p>
+<p>闭包有三种形式：</p>
+<ul>
+<li>全局函数是一个有名字但不会捕获任何值的闭包。</li>
+<li>嵌套函数是一个有名字并可以捕获其封闭函数域内值的闭包。</li>
+<li>闭包表达式是一个利用轻量级语法所写的可以捕获其上下文中变量和常量值的匿名闭包。</li>
+</ul>
+<h3 id="1.闭包表达式">1.闭包表达式</h3>
+
+<p>闭包表达式是一种利用简洁语法构建内联闭包的方式。 闭包表达式提供了一些语法优化，使得撰写闭包变得简单明了。 下面闭包表达式的例子通过使用几次迭代展示了sorted函数定义和语法优化的方式。 每一次迭代都用更简洁的方式描述了相同的功能。</p>
+<p>Swift 标准库提供了<code>sorted</code>函数，会根据您提供的基于输出类型排序的闭包函数将已知类型数组中的值进行排序。 一旦排序完成，函数会返回一个与原数组大小相同的新数组，该数组中包含已经正确排序的同类型元素。</p>
+<p>下面的闭包表达式示例使用sorted函数对一个String类型的数组进行字母逆序排序，以下是初始数组值：</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> names = [<span class="hljs-string">"Chris"</span>, <span class="hljs-string">"Alex"</span>, <span class="hljs-string">"Ewa"</span>, <span class="hljs-string">"Barry"</span>, <span class="hljs-string">"Daniella"</span>]
+</code></pre>
+<p>sorted函数需要传入两个参数：</p>
+<ul>
+<li>已知类型的数组</li>
+<li>闭包函数，该闭包函数需要传入与数组类型相同的两个值，并返回一个布尔类型值来告诉sorted函数当排序结束后传入的第一个参数排在第二个参数前面还是后面。如果第一个参数值出现在第二个参数值前面，排序闭包函数需要返回true，反之返回false。</li>
+</ul>
+<pre><code class="lang-swift"><span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">backwards</span><span class="hljs-params">(s1: String, s2: String)</span> -&gt; <span class="hljs-title">Bool</span> </span>{
+    <span class="hljs-keyword">return</span> s1 &gt; s2
+}
+<span class="hljs-keyword">var</span> reversed = sorted(names, backwards)
+<span class="hljs-comment">// reversed 为 ["Ewa", "Daniella", "Chris", "Barry", "Alex"]</span>
+</code></pre>
+<h4 id="1.1闭包表达式">1.1闭包表达式语法</h4>
+
+<p>闭包表达式的语法</p>
+<pre><code class="lang-swift">
+{ (parameters) -&gt; returnType <span class="hljs-keyword">in</span>
+    statements
+}
+</code></pre>
+<p>闭包表达式语法可以使用常量、变量和inout类型作为参数，<strong>不提供默认值</strong>。 也可以在参数列表的最后使用可变参数。 元组也可以作为参数和返回值。</p>
+<pre><code class="lang-swift">reversed = sorted(names, { (s1: <span class="hljs-type">String</span>, s2: <span class="hljs-type">String</span>) -&gt; <span class="hljs-type">Bool</span> <span class="hljs-keyword">in</span>
+    <span class="hljs-keyword">return</span> s1 &gt; s2
+})
+</code></pre>
+<h4 id="1.2根据上下文推断类型">1.2根据上下文推断类型</h4>
+
+<p>因为排序闭包函数是作为sorted函数的参数进行传入的，Swift可以推断其参数和返回值的类型。 sorted期望第二个参数是类型为(String, String) -&gt; Bool的函数，因此实际上String,String和Bool类型并不需要作为闭包表达式定义中的一部分。 因为所有的类型都可以被正确推断，返回箭头 (-&gt;) 和围绕在参数周围的括号也可以被省略：</p>
+<pre><code class="lang-swift">reversed = sorted(names, { s1, s2 <span class="hljs-keyword">in</span> <span class="hljs-keyword">return</span> s1 &gt; s2 } )
+</code></pre>
+<h4 id="1.3单表达式闭包隐式返回">1.3单表达式闭包隐式返回</h4>
+
+<p>单行表达式闭包可以通过隐藏return关键字来隐式返回单行表达式的结果，如上版本的例子可以改写为：</p>
+<pre><code class="lang-swift">reversed = sorted(names, { s1, s2 <span class="hljs-keyword">in</span> s1 &gt; s2 } )
+</code></pre>
+<h4 id="1.4参数名称缩写">1.4参数名称缩写</h4>
+
+<p>Swift 自动为内联函数提供了参数名称缩写功能，您可以直接通过$0,$1,$2来顺序调用闭包的参数。</p>
+<p>如果您在闭包表达式中使用参数名称缩写，您可以在闭包参数列表中省略对其的定义，并且对应参数名称缩写的类型会通过函数类型进行推断。 in关键字也同样可以被省略，因为此时闭包表达式完全由闭包函数体构成：</p>
+<pre><code class="lang-swift">reversed = sorted(names, { $<span class="hljs-number">0</span> &gt; $<span class="hljs-number">1</span> } )
+</code></pre>
+<h4 id="1.5运算符函数">1.5运算符函数</h4>
+
+<p>实际上还有一种更简短的方式来撰写上面例子中的闭包表达式。 Swift 的String类型定义了关于大于号 (&gt;) 的字符串实现，其作为一个函数接受两个String类型的参数并返回Bool类型的值。 而这正好与sorted函数的第二个参数需要的函数类型相符合。 因此，您可以简单地传递一个大于号，Swift可以自动推断出您想使用大于号的字符串函数实现：</p>
+<pre><code class="lang-swift">reversed = sorted(names, &gt;)
+</code></pre>
+<h3 id="2.尾随闭包">2.尾随闭包</h3>
+
+<p>如果您需要将一个很长的闭包表达式作为最后一个参数传递给函数，可以使用尾随闭包来增强函数的可读性。 尾随闭包是一个书写在函数括号之后的闭包表达式，函数支持将其作为最后一个参数调用。</p>
+<p>在上例中作为sorted函数参数的字符串排序闭包可以改写为：</p>
+<pre><code class="lang-swift">reversed = sorted(names) { $<span class="hljs-number">0</span> &gt; $<span class="hljs-number">1</span> }
+</code></pre>
+<h3 id="3.捕获值">3.捕获值</h3>
+
+<p>闭包可以在其定义的上下文中捕获常量或变量。 即使定义这些常量和变量的原域已经不存在，闭包仍然可以在闭包函数体内引用和修改这些值。</p>
+<h3 id="4.闭包是引用类型">4.闭包是引用类型</h3>
+
+<p>略</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./函数.html" class="navigation navigation-prev " aria-label="Previous page: 函数"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./枚举.html" class="navigation navigation-next " aria-label="Next page: 枚举"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

@@ -1,0 +1,809 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>控制语句 | Swift学习资料整理</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    
+    
+    <link rel="next" href="./函数.html" />
+    
+    
+    <link rel="prev" href="./集合.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book" data-level="4" data-basepath="." data-revision="1431913771131">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="基础.html">
+            
+                
+                    <a href="./基础.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         基础
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="字符串和字符.html">
+            
+                
+                    <a href="./字符串和字符.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         字符串和字符
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="集合.html">
+            
+                
+                    <a href="./集合.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         集合
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="4" data-path="控制语句.html">
+            
+                
+                    <a href="./控制语句.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         控制语句
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="函数.html">
+            
+                
+                    <a href="./函数.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="闭包.html">
+            
+                
+                    <a href="./闭包.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         闭包
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="枚举.html">
+            
+                
+                    <a href="./枚举.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         枚举
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="类和结构体.html">
+            
+                
+                    <a href="./类和结构体.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         类和结构体
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="属性.html">
+            
+                
+                    <a href="./属性.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         属性
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="下标脚本.html">
+            
+                
+                    <a href="./下标脚本.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         下标脚本
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="继承.html">
+            
+                
+                    <a href="./继承.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         继承
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="构造过程.html">
+            
+                
+                    <a href="./构造过程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         构造过程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="析构过程.html">
+            
+                
+                    <a href="./析构过程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         析构过程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="自动引用计数.html">
+            
+                
+                    <a href="./自动引用计数.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         自动引用计数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15" data-path="可选链.html">
+            
+                
+                    <a href="./可选链.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         可选链
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16" data-path="类型转换.html">
+            
+                
+                    <a href="./类型转换.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                         类型转换
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="17" data-path="嵌套类型.html">
+            
+                
+                    <a href="./嵌套类型.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                         嵌套类型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="18" data-path="扩展.html">
+            
+                
+                    <a href="./扩展.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>18.</b>
+                        
+                         扩展
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="19" data-path="协议.html">
+            
+                
+                    <a href="./协议.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>19.</b>
+                        
+                         协议
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="20" data-path="泛型.html">
+            
+                
+                    <a href="./泛型.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>20.</b>
+                        
+                         泛型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="21" data-path="权限控制.html">
+            
+                
+                    <a href="./权限控制.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>21.</b>
+                        
+                         权限控制
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Swift学习资料整理</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_5791">
+                    
+                        <h2 id="">控制语句</h2>
+<h3 id="">目录</h3>
+<ul>
+<li><a href="#1.条件语句">1.条件语句</a><ul>
+<li><a href="#1.1if语句">1.1if语句</a></li>
+<li><a href="#1.2Switch语句">1.2Switch语句</a><ul>
+<li><a href="#1.2.1不存在隐式的贯穿">1.2.1不存在隐式的贯穿</a></li>
+<li><a href="#1.2.2区间匹配">1.2.2区间匹配</a></li>
+<li><a href="#1.2.3元组匹配">1.2.3元组匹配</a></li>
+<li><a href="#1.2.4值绑定">1.2.4值绑定</a></li>
+</ul>
+</li>
+<li><a href="#1.2.5Where">1.2.5Where</a></li>
+</ul>
+</li>
+<li><a href="#2.循环语句">2.循环语句</a><ul>
+<li><a href="#2.1for循环">2.1for循环</a></li>
+<li><a href="#2.2while循环">2.2while循环</a></li>
+<li><a href="#2.3dowhile循环">2.3dowhile循环</a></li>
+</ul>
+</li>
+<li><a href="#3.控制转移语句">3.控制转移语句</a><ul>
+<li><a href="#3.1Continue语句">3.1Continue语句</a></li>
+<li><a href="#3.2break语句">3.2break语句</a></li>
+<li><a href="#3.3Fallthrough">3.3Fallthrough</a></li>
+<li><a href="#3.4带标签的语句">3.4带标签的语句</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="1.条件语句">1.条件语句</h3>
+
+
+
+<h4 id="1.1if语句">1.1if语句</h4>
+
+<p>略</p>
+<h4 id="1.2Switch语句">1.2Switch语句</h4>
+
+
+<p><code>switch</code>语句必须是完备的。这就是说，<strong>每一个可能的值都必须至少有case分支与之对应</strong>。在某些不可能含在所有值的情况下，你可以使用默认分支满足该要求，这个默认分支必须在<code>switch</code>语句最后面。</p>
+<p>下面的例子使用switch语句来匹配一个名为someCharacter的小写字符</p>
+<pre><code class="lang-swift">
+<span class="hljs-keyword">let</span> someCharacter: <span class="hljs-type">Character</span> = <span class="hljs-string">"e"</span>
+<span class="hljs-keyword">switch</span> someCharacter {
+<span class="hljs-keyword">case</span> <span class="hljs-string">"a"</span>, <span class="hljs-string">"e"</span>, <span class="hljs-string">"i"</span>, <span class="hljs-string">"o"</span>, <span class="hljs-string">"u"</span>:
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"<span class="hljs-subst">\(someCharacter)</span> is a vowel"</span>)
+<span class="hljs-keyword">case</span> <span class="hljs-string">"b"</span>, <span class="hljs-string">"c"</span>, <span class="hljs-string">"d"</span>, <span class="hljs-string">"f"</span>, <span class="hljs-string">"g"</span>, <span class="hljs-string">"h"</span>, <span class="hljs-string">"j"</span>, <span class="hljs-string">"k"</span>, <span class="hljs-string">"l"</span>, <span class="hljs-string">"m"</span>,
+<span class="hljs-string">"n"</span>, <span class="hljs-string">"p"</span>, <span class="hljs-string">"q"</span>, <span class="hljs-string">"r"</span>, <span class="hljs-string">"s"</span>, <span class="hljs-string">"t"</span>, <span class="hljs-string">"v"</span>, <span class="hljs-string">"w"</span>, <span class="hljs-string">"x"</span>, <span class="hljs-string">"y"</span>, <span class="hljs-string">"z"</span>:
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"<span class="hljs-subst">\(someCharacter)</span> is a consonant"</span>)
+<span class="hljs-keyword">default</span>:
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"<span class="hljs-subst">\(someCharacter)</span> is not a vowel or a consonant"</span>)
+}
+<span class="hljs-comment">// 输出 "e is a vowe</span>
+</code></pre>
+<h5 id="1.2.1不存在隐式的贯穿">1.2.1不存在隐式的贯穿</h5>
+
+<p>与 C 语言和 Objective-C 中的switch语句不同，在 Swift 中，当匹配的 case 分支中的代码执行完毕后，程序会终止switch语句，而不会继续执行下一个 case 分支。这也就是说，不需要在 case 分支中显式地使用break语句。</p>
+<p><strong>每一个case分支都必须包含至少一条语句</strong>。像下面这样书写代码是无效的，因为第一个case分支是空的。</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> anotherCharacter: <span class="hljs-type">Character</span> = <span class="hljs-string">"a"</span>
+<span class="hljs-keyword">switch</span> anotherCharacter {
+<span class="hljs-keyword">case</span> <span class="hljs-string">"a"</span>:
+<span class="hljs-keyword">case</span> <span class="hljs-string">"A"</span>:
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"The letter A"</span>)
+<span class="hljs-keyword">default</span>:
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"Not the letter A"</span>)
+}
+<span class="hljs-comment">//这个将产生一个编译错误</span>
+</code></pre>
+<p>一个case也可以包含多个模式，用逗号把它们分开，如果太长也可以分行写。</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">switch</span> some value to consider {
+<span class="hljs-keyword">case</span> value <span class="hljs-number">1</span>,
+value <span class="hljs-number">2</span>:
+statements
+}
+</code></pre>
+<h5 id="1.2.2区间匹配">1.2.2区间匹配</h5>
+
+<p><code>case</code>分支的模式也可以是一个值的区间。</p>
+<pre><code class="lang-swift">
+<span class="hljs-keyword">let</span> <span class="hljs-built_in">count</span> = <span class="hljs-number">3_000_000_000_000</span>
+<span class="hljs-keyword">let</span> countedThings = <span class="hljs-string">"stars in the Milky Way"</span>
+<span class="hljs-keyword">var</span> naturalCount: <span class="hljs-type">String</span>
+<span class="hljs-keyword">switch</span> <span class="hljs-built_in">count</span> {
+<span class="hljs-keyword">case</span> <span class="hljs-number">0</span>:
+    naturalCount = <span class="hljs-string">"no"</span>
+<span class="hljs-keyword">case</span> <span class="hljs-number">1</span>...<span class="hljs-number">3</span>:
+    naturalCount = <span class="hljs-string">"a few"</span>
+<span class="hljs-keyword">case</span> <span class="hljs-number">4</span>...<span class="hljs-number">9</span>:
+    naturalCount = <span class="hljs-string">"several"</span>
+<span class="hljs-keyword">case</span> <span class="hljs-number">10</span>...<span class="hljs-number">99</span>:
+    naturalCount = <span class="hljs-string">"tens of"</span>
+<span class="hljs-keyword">case</span> <span class="hljs-number">100</span>...<span class="hljs-number">999</span>:
+    naturalCount = <span class="hljs-string">"hundreds of"</span>
+<span class="hljs-keyword">case</span> <span class="hljs-number">1000</span>...<span class="hljs-number">999_999</span>:
+    naturalCount = <span class="hljs-string">"thousands of"</span>
+<span class="hljs-keyword">default</span>:
+    naturalCount = <span class="hljs-string">"millions and millions of"</span>
+}
+<span class="hljs-built_in">println</span>(<span class="hljs-string">"There are <span class="hljs-subst">\(naturalCount)</span> <span class="hljs-subst">\(countedThings)</span>."</span>)
+<span class="hljs-comment">// 输出 "There are millions and millions of stars in the Milky Way."</span>
+</code></pre>
+<h5 id="1.2.3元组匹配">1.2.3元组匹配</h5>
+
+<p>可以使用元组在同一个<code>switch</code>语句总测试多个值。元组中的元素可以是值，也可以是区间。另外使用下划线来匹配所有可能的值。</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> somePoint = (<span class="hljs-number">1</span>, <span class="hljs-number">1</span>)
+<span class="hljs-keyword">switch</span> somePoint {
+<span class="hljs-keyword">case</span> (<span class="hljs-number">0</span>, <span class="hljs-number">0</span>):
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"(0, 0) is at the origin"</span>)
+<span class="hljs-keyword">case</span> (<span class="hljs-number">_</span>, <span class="hljs-number">0</span>):
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"(<span class="hljs-subst">\(somePoint.<span class="hljs-number">0</span>)</span>, 0) is on the x-axis"</span>)
+<span class="hljs-keyword">case</span> (<span class="hljs-number">0</span>, <span class="hljs-number">_</span>):
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"(0, <span class="hljs-subst">\(somePoint.<span class="hljs-number">1</span>)</span>) is on the y-axis"</span>)
+<span class="hljs-keyword">case</span> (-<span class="hljs-number">2</span>...<span class="hljs-number">2</span>, -<span class="hljs-number">2</span>...<span class="hljs-number">2</span>):
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"(<span class="hljs-subst">\(somePoint.<span class="hljs-number">0</span>)</span>, <span class="hljs-subst">\(somePoint.<span class="hljs-number">1</span>)</span>) is inside the box"</span>)
+<span class="hljs-keyword">default</span>:
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"(<span class="hljs-subst">\(somePoint.<span class="hljs-number">0</span>)</span>, <span class="hljs-subst">\(somePoint.<span class="hljs-number">1</span>)</span>) is outside of the box"</span>)
+}
+<span class="hljs-comment">// 输出 "(1, 1) is inside the box"</span>
+</code></pre>
+<h5 id="1.2.4值绑定">1.2.4值绑定</h5>
+
+<p>case分支的模式允许将匹配的值绑定到一个临时的常量或变量，这些常量或变量在该case分支里就可以被引用了，这种行为称为值绑定。</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> anotherPoint = (<span class="hljs-number">2</span>, <span class="hljs-number">0</span>)
+<span class="hljs-keyword">switch</span> anotherPoint {
+<span class="hljs-keyword">case</span> (<span class="hljs-keyword">let</span> x, <span class="hljs-number">0</span>):
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"on the x-axis with an x value of <span class="hljs-subst">\(x)</span>"</span>)
+<span class="hljs-keyword">case</span> (<span class="hljs-number">0</span>, <span class="hljs-keyword">let</span> y):
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"on the y-axis with a y value of <span class="hljs-subst">\(y)</span>"</span>)
+<span class="hljs-keyword">case</span> <span class="hljs-keyword">let</span> (x, y):
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"somewhere else at (<span class="hljs-subst">\(x)</span>, <span class="hljs-subst">\(y)</span>)"</span>)
+}
+<span class="hljs-comment">// 输出 "on the x-axis with an x value of 2"</span>
+</code></pre>
+<h5 id="1.2.5Where">1.2.5Where</h5>
+
+<p>case分支的模式可以使用where语句来判断额外的条件。</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> yetAnotherPoint = (<span class="hljs-number">1</span>, -<span class="hljs-number">1</span>)
+<span class="hljs-keyword">switch</span> yetAnotherPoint {
+<span class="hljs-keyword">case</span> <span class="hljs-keyword">let</span> (x, y) <span class="hljs-keyword">where</span> x == y:
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"(<span class="hljs-subst">\(x)</span>, <span class="hljs-subst">\(y)</span>) is on the line x == y"</span>)
+<span class="hljs-keyword">case</span> <span class="hljs-keyword">let</span> (x, y) <span class="hljs-keyword">where</span> x == -y:
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"(<span class="hljs-subst">\(x)</span>, <span class="hljs-subst">\(y)</span>) is on the line x == -y"</span>)
+<span class="hljs-keyword">case</span> <span class="hljs-keyword">let</span> (x, y):
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"(<span class="hljs-subst">\(x)</span>, <span class="hljs-subst">\(y)</span>) is just some arbitrary point"</span>)
+}
+<span class="hljs-comment">// 输出 "(1, -1) is on the line x == -y"</span>
+</code></pre>
+<h3 id="2.循环语句">2.循环语句</h3>
+
+<h4 id="2.1for循环">2.1for循环</h4>
+
+<p>Swift提供了两种<code>for</code>循环形式</p>
+<ul>
+<li>for-in用来遍历一个区间（range），序列（sequence），集合（collection），系列（progression）里面所有的元素执行一系列语句。</li>
+<li>for条件递增（for-condition-increment）语句，用来重复执行一系列语句直到达成特定条件达成，一般通过在每次循环完成后增加计数器的值来实现。</li>
+</ul>
+<p>for-in 循环</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> sum = <span class="hljs-number">0</span>
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>...<span class="hljs-number">100</span> {
+    sum += i
+}
+
+<span class="hljs-built_in">println</span>(sum)
+</code></pre>
+<p>如果你不需要知道区间内每一项的值，你可以使用下划线（_）替代变量名来忽略对值的访问</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> base = <span class="hljs-number">3</span>
+<span class="hljs-keyword">let</span> power = <span class="hljs-number">10</span>
+<span class="hljs-keyword">var</span> answer = <span class="hljs-number">1</span>
+<span class="hljs-keyword">for</span> <span class="hljs-number">_</span> <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>...power {
+    answer *= base
+}
+<span class="hljs-built_in">println</span>(<span class="hljs-string">"<span class="hljs-subst">\(base)</span> to the power of <span class="hljs-subst">\(power)</span> is <span class="hljs-subst">\(answer)</span>"</span>)
+<span class="hljs-comment">// 输出 "3 to the power of 10 is 59049"</span>
+</code></pre>
+<p>for循环</p>
+<pre><code>
+var sum = 0
+
+for var i = 0 ; i &lt;= 100 ;i++ {
+    sum += i
+}
+
+println(sum)
+</code></pre><h4 id="2.2while循环">2.2while循环</h4>
+
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> sum3 = <span class="hljs-number">0</span>
+
+<span class="hljs-keyword">while</span> index &lt;= <span class="hljs-number">100</span> {
+    sum += index
+    index++
+}
+
+<span class="hljs-built_in">println</span>(<span class="hljs-string">"sum=<span class="hljs-subst">\(sum)</span>"</span>)
+<span class="hljs-comment">// sum=5050</span>
+</code></pre>
+<h4 id="2.3dowhile循环">2.3dowhile循环</h4>
+
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> index = <span class="hljs-number">1</span>
+
+<span class="hljs-keyword">var</span> sum = <span class="hljs-number">0</span>
+
+<span class="hljs-keyword">do</span> {
+    sum4 += index
+    index++
+} <span class="hljs-keyword">while</span> index &lt;= <span class="hljs-number">100</span>
+
+<span class="hljs-built_in">println</span>(<span class="hljs-string">"sum4=<span class="hljs-subst">\(sum)</span>"</span>)
+</code></pre>
+<h3 id="3.控制转移语句">3.控制转移语句</h3>
+
+<p>控制转移语句可以改变你代码的执行顺序，通过它可以实现代码的跳转。Swift有四种控制语句。</p>
+<ul>
+<li>continue</li>
+<li>break</li>
+<li>fallthrough</li>
+<li>return</li>
+</ul>
+<h4 id="3.1Continue语句">3.1Continue语句</h4>
+
+<p><code>continue</code>语句告诉一个循环体立刻停止本次循环迭代，重新开始下次循环迭代。</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> puzzleInput = <span class="hljs-string">"great minds think alike"</span>
+<span class="hljs-keyword">var</span> puzzleOutput = <span class="hljs-string">""</span>
+<span class="hljs-keyword">for</span> character <span class="hljs-keyword">in</span> puzzleInput {
+    <span class="hljs-keyword">switch</span> character {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">"a"</span>, <span class="hljs-string">"e"</span>, <span class="hljs-string">"i"</span>, <span class="hljs-string">"o"</span>, <span class="hljs-string">"u"</span>, <span class="hljs-string">" "</span>:
+        <span class="hljs-keyword">continue</span>
+    <span class="hljs-keyword">default</span>:
+        puzzleOutput.append(character)
+    }
+}
+<span class="hljs-built_in">println</span>(puzzleOutput)
+    <span class="hljs-comment">// 输出 "grtmndsthnklk"</span>
+</code></pre>
+<h4 id="3.2break语句">3.2break语句</h4>
+
+<p><code>break</code>语句会立刻结束整个控制流的执行。</p>
+<h4 id="3.3Fallthrough">3.3Fallthrough</h4>
+
+<p>在case分支中使用<code>fallthrough</code>语句可以实现C语言的贯穿特性。</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> integerToDescribe = <span class="hljs-number">5</span>
+<span class="hljs-keyword">var</span> description = <span class="hljs-string">"The number <span class="hljs-subst">\(integerToDescribe)</span> is"</span>
+<span class="hljs-keyword">switch</span> integerToDescribe {
+<span class="hljs-keyword">case</span> <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>, <span class="hljs-number">11</span>, <span class="hljs-number">13</span>, <span class="hljs-number">17</span>, <span class="hljs-number">19</span>:
+    description += <span class="hljs-string">" a prime number, and also"</span>
+    <span class="hljs-keyword">fallthrough</span>
+<span class="hljs-keyword">default</span>:
+    description += <span class="hljs-string">" an integer."</span>
+}
+<span class="hljs-built_in">println</span>(description)
+<span class="hljs-comment">// 输出 "The number 5 is a prime number, and also an integer."</span>
+</code></pre>
+<h4 id="3.4带标签的语句">3.4带标签的语句</h4>
+
+<p>可以使用标签来标记一个循环体或者<code>switch</code>代码块，当使用<code>break</code>或者<code>continue</code>时，带上这个标签，可以控制该标签代表对象的中断或者执行。</p>
+<pre><code class="lang-swift">outer:<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> (<span class="hljs-number">1</span>...<span class="hljs-number">5</span>){
+    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> (<span class="hljs-number">1</span>...<span class="hljs-number">5</span>){
+
+        <span class="hljs-keyword">if</span>(i == <span class="hljs-number">2</span>){
+            <span class="hljs-keyword">break</span> outer;
+        }
+         <span class="hljs-built_in">println</span>(j)
+    }
+}
+<span class="hljs-comment">//1</span>
+<span class="hljs-comment">//2</span>
+<span class="hljs-comment">//3</span>
+<span class="hljs-comment">//4</span>
+<span class="hljs-comment">//5</span>
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./集合.html" class="navigation navigation-prev " aria-label="Previous page: 集合"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./函数.html" class="navigation navigation-next " aria-label="Next page: 函数"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

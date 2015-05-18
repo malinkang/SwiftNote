@@ -1,0 +1,852 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>函数 | Swift学习资料整理</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    
+    
+    <link rel="next" href="./闭包.html" />
+    
+    
+    <link rel="prev" href="./控制语句.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="gitbook/style.css">
+
+
+        
+    <div class="book" data-level="5" data-basepath="." data-revision="1431913771131">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="基础.html">
+            
+                
+                    <a href="./基础.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         基础
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="字符串和字符.html">
+            
+                
+                    <a href="./字符串和字符.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         字符串和字符
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="集合.html">
+            
+                
+                    <a href="./集合.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         集合
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="控制语句.html">
+            
+                
+                    <a href="./控制语句.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         控制语句
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="5" data-path="函数.html">
+            
+                
+                    <a href="./函数.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         函数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="闭包.html">
+            
+                
+                    <a href="./闭包.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         闭包
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="枚举.html">
+            
+                
+                    <a href="./枚举.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         枚举
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="类和结构体.html">
+            
+                
+                    <a href="./类和结构体.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         类和结构体
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="属性.html">
+            
+                
+                    <a href="./属性.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         属性
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="下标脚本.html">
+            
+                
+                    <a href="./下标脚本.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         下标脚本
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="11" data-path="继承.html">
+            
+                
+                    <a href="./继承.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                         继承
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="12" data-path="构造过程.html">
+            
+                
+                    <a href="./构造过程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                         构造过程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="13" data-path="析构过程.html">
+            
+                
+                    <a href="./析构过程.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                         析构过程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="14" data-path="自动引用计数.html">
+            
+                
+                    <a href="./自动引用计数.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                         自动引用计数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="15" data-path="可选链.html">
+            
+                
+                    <a href="./可选链.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                         可选链
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16" data-path="类型转换.html">
+            
+                
+                    <a href="./类型转换.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.</b>
+                        
+                         类型转换
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="17" data-path="嵌套类型.html">
+            
+                
+                    <a href="./嵌套类型.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>17.</b>
+                        
+                         嵌套类型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="18" data-path="扩展.html">
+            
+                
+                    <a href="./扩展.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>18.</b>
+                        
+                         扩展
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="19" data-path="协议.html">
+            
+                
+                    <a href="./协议.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>19.</b>
+                        
+                         协议
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="20" data-path="泛型.html">
+            
+                
+                    <a href="./泛型.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>20.</b>
+                        
+                         泛型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="21" data-path="权限控制.html">
+            
+                
+                    <a href="./权限控制.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>21.</b>
+                        
+                         权限控制
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Swift学习资料整理</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_5779">
+                    
+                        <h2 id="">函数</h2>
+<h3 id="">目录</h3>
+<ul>
+<li><a href="#1.函数定义与调用">1.函数定义与调用</a></li>
+<li><a href="#2.函数参数">2.函数参数</a><ul>
+<li><a href="#2.1多个参数">2.1多个参数</a></li>
+<li><a href="#2.2没有参数">2.2没有参数</a></li>
+<li><a href="#2.3外部参数名">2.3外部参数名</a></li>
+<li><a href="#2.4默认参数值">2.4默认参数值</a></li>
+<li><a href="#2.5可变参数">2.5可变参数</a></li>
+<li><a href="#2.6输入输出参数">2.6输入输出参数</a></li>
+</ul>
+</li>
+<li><a href="#3.函数返回值">3.函数返回值</a><ul>
+<li><a href="#3.1没有返回值">3.1没有返回值</a></li>
+<li><a href="#3.2多个返回值">3.2多个返回值</a></li>
+</ul>
+</li>
+<li><a href="#4.函数类型">4.函数类型</a><ul>
+<li><a href="#4.1使用函数类型">4.1使用函数类型</a></li>
+<li><a href="#4.2函数类型作为参数类型">4.2函数类型作为参数类型</a></li>
+<li><a href="#4.3函数类型作为返回值">4.3函数类型作为返回值</a></li>
+<li><a href="#4.4嵌套函数">4.4嵌套函数</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="1.函数定义与调用">1.函数定义与调用</h3>
+
+<pre><code class="lang-swift"><span class="hljs-comment">// 定义函数</span>
+<span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">sayHello</span><span class="hljs-params">(name:String)</span>-&gt; <span class="hljs-title">String</span> </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"hello,"</span>+name
+}
+
+<span class="hljs-comment">//调用函数</span>
+
+<span class="hljs-built_in">println</span>(sayHello(<span class="hljs-string">"malinkang"</span>))
+<span class="hljs-comment">//hello,malinkang</span>
+</code></pre>
+<h3 id="2.函数参数">2.函数参数</h3>
+
+
+<h4 id="2.1多个参数">2.1多个参数</h4>
+
+<pre><code class="lang-swift"><span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">add</span><span class="hljs-params">(a:Int,b:Int)</span> -&gt; <span class="hljs-title">Int</span> </span>{
+    <span class="hljs-keyword">return</span> a + b
+}
+
+<span class="hljs-built_in">println</span>(add(<span class="hljs-number">4</span>,<span class="hljs-number">8</span>))
+<span class="hljs-comment">// 输出12</span>
+</code></pre>
+<h4 id="2.2没有参数">2.2没有参数</h4>
+
+<pre><code class="lang-swift"><span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">sayHelloWorld</span><span class="hljs-params">()</span> -&gt; <span class="hljs-title">String</span> </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello,World"</span>
+}
+
+<span class="hljs-built_in">println</span>(sayHelloWorld())
+</code></pre>
+<h4 id="2.3外部参数名">2.3外部参数名</h4>
+
+<p>调用函数时，给每个参数命名是非常有用的，因为这些参数名可以指出各个实参的用途是什么。</p>
+<p>如果你希望函数的使用者在调用函数时提供参数名字，那就需要给每个参数除了局部参数名外再定义一个外部参数名。外部参数名写在局部参数名之前，用空格分隔。</p>
+<pre><code class="lang-swift"><span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">someFunction</span><span class="hljs-params">(externalParameterName localParameterName: Int)</span> </span>{
+    <span class="hljs-comment">// function body goes here, and can use localParameterName</span>
+    <span class="hljs-comment">// to refer to the argument value for that parameter</span>
+}
+</code></pre>
+<p>如果你提供了外部参数名，那么函数在被调用时，必须使用外部参数名。</p>
+<pre><code class="lang-swift"><span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">sayHello</span><span class="hljs-params">(name localname:String)</span>-&gt; <span class="hljs-title">String</span> </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"hello,"</span>+localname<span class="hljs-comment">// 不能使用name</span>
+}
+
+<span class="hljs-comment">//调用函数</span>
+
+<span class="hljs-built_in">println</span>(sayHello(name:<span class="hljs-string">"malinkang"</span>))
+<span class="hljs-comment">//hello,malinkang</span>
+</code></pre>
+<p>如果你需要提供外部参数名，但是局部参数名已经定义好了，那么你不需要写两次参数名。相反，只写一次参数名，并用井号（#）作为前缀就可以了。这告诉 Swift 使用这个参数名作为局部和外部参数名。</p>
+<pre><code class="lang-swift"><span class="hljs-comment">// 定义函数</span>
+<span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">sayHello</span><span class="hljs-params">(#name:String)</span>-&gt; <span class="hljs-title">String</span> </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"hello,"</span>+name<span class="hljs-comment">// 不能使用name</span>
+}
+
+<span class="hljs-comment">//调用函数</span>
+
+<span class="hljs-built_in">println</span>(sayHello(name:<span class="hljs-string">"malinkang"</span>))
+<span class="hljs-comment">//hello,malinkang</span>
+</code></pre>
+<h4 id="2.4默认参数值">2.4默认参数值</h4>
+
+<p>你可以在函数体中为每个参数定义默认值。当默认值被定义后，调用这个函数时可以忽略这个参数。</p>
+<p>Swift自动为默认参数提供了外部参数名，当函数调用时，外部参数名必须使用。</p>
+<pre><code class="lang-swift"><span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">add</span><span class="hljs-params">(a:Int,b:Int = <span class="hljs-number">1</span>,<span class="hljs-built_in">c</span>:Int)</span> -&gt; <span class="hljs-title">Int</span></span>{
+    <span class="hljs-keyword">return</span> a + <span class="hljs-built_in">c</span> + b
+}
+
+<span class="hljs-built_in">println</span>(add(<span class="hljs-number">1</span>,b: <span class="hljs-number">3</span>,<span class="hljs-number">2</span>))
+<span class="hljs-comment">//输出 6</span>
+
+<span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">add</span><span class="hljs-params">(a:Int,<span class="hljs-built_in">c</span>:Int,b:Int = <span class="hljs-number">1</span>)</span> -&gt; <span class="hljs-title">Int</span></span>{
+    <span class="hljs-keyword">return</span> a + <span class="hljs-built_in">c</span> + b
+}
+
+<span class="hljs-built_in">println</span>(add(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>))
+<span class="hljs-comment">//输出 4</span>
+
+
+<span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">add</span><span class="hljs-params">(a:Int,<span class="hljs-built_in">c</span>:Int,b:Int = <span class="hljs-number">1</span>)</span> -&gt; <span class="hljs-title">Int</span></span>{
+    <span class="hljs-keyword">return</span> a + <span class="hljs-built_in">c</span> + b
+}
+
+<span class="hljs-built_in">println</span>(add(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,b:<span class="hljs-number">4</span>))
+<span class="hljs-comment">// 输出 7</span>
+
+
+<span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">add</span><span class="hljs-params">(a:Int,<span class="hljs-built_in">c</span>:Int = <span class="hljs-number">2</span>,b:Int = <span class="hljs-number">1</span>)</span> -&gt; <span class="hljs-title">Int</span></span>{
+    <span class="hljs-keyword">return</span> a + <span class="hljs-built_in">c</span> + b
+}
+
+<span class="hljs-built_in">println</span>(add(<span class="hljs-number">1</span>))
+<span class="hljs-comment">// 输出 4</span>
+</code></pre>
+<h4 id="2.5可变参数">2.5可变参数</h4>
+
+<p>一个可变参以接受一个或多个值。函数调用时，你可以用可变参数来传入不确定数量的输入参数。通过在变量类型名后面加入（...）的方式来定义可变参数。</p>
+<p>传入可变参数的值在函数体内当做这个类型的一个数组。例如，一个叫做 numbers 的 Double... 型可变参数，在函数体内可以当做一个叫 numbers 的 Double[] 型的数组常量。</p>
+<pre><code class="lang-swift"><span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">arithmeticMean</span><span class="hljs-params">(numbers: Double...)</span> -&gt; <span class="hljs-title">Double</span> </span>{
+    <span class="hljs-keyword">var</span> total: <span class="hljs-type">Double</span> = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">for</span> number <span class="hljs-keyword">in</span> numbers {
+        total += number
+    }
+
+    <span class="hljs-built_in">println</span>(numbers[<span class="hljs-number">0</span>])<span class="hljs-comment">// 可以使用下标访问</span>
+    <span class="hljs-keyword">return</span> total / <span class="hljs-type">Double</span>(numbers.<span class="hljs-built_in">count</span>)
+}
+arithmeticMean(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>)
+<span class="hljs-comment">//3.0</span>
+arithmeticMean(<span class="hljs-number">3</span>, <span class="hljs-number">8</span>, <span class="hljs-number">19</span>)
+<span class="hljs-comment">//10.0</span>
+</code></pre>
+<p><strong>一个函数至多能有一个可变参数，而且它必须是参数表中最后的一个。</strong></p>
+<p>参数默认是常量，所以不能改变参数的值。要想改变参数的值，必须将参数定义为变量。</p>
+<pre><code class="lang-swift">
+<span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">addOne</span><span class="hljs-params">(<span class="hljs-keyword">var</span> a:Int)</span> -&gt; <span class="hljs-title">Int</span></span>{
+    <span class="hljs-keyword">return</span> a++;
+}
+
+addOne(<span class="hljs-number">1</span>)
+</code></pre>
+<h4 id="2.6输入输出参数">2.6输入输出参数</h4>
+
+<p>变量参数仅仅能在函数体内被更改。如果你想要一个函数可以修改参数的值，并且想要在这些修改在函数调用结束后仍然存在，那么就应该把这个参数定义为输入输出参数。</p>
+<p>定义一个输入输出参数时，在参数定义前加 inout 关键字。一个输入输出参数的值被函数修改，然后被传出函数，替换原来的值。</p>
+<p>你只能将变量作为输入输出参数。你不能传入常量或者字面量，因为这些量是不能被修改的。当传入的参数作为输入输出参数时，需要在参数前加<code>&amp;</code>符，表示这个值可以被函数修改。</p>
+<p><strong>输入输出参数不能有默认值，而且可变参数不能用 inout 标记。如果你用 inout 标记一个参数，这个参数不能被 var 或者 let 标记。</strong></p>
+<pre><code class="lang-swift">
+<span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">addOne</span><span class="hljs-params">(<span class="hljs-keyword">inout</span> a:Int)</span> -&gt; <span class="hljs-title">Int</span></span>{
+    <span class="hljs-keyword">return</span> ++a;
+}
+
+<span class="hljs-keyword">var</span> a = <span class="hljs-number">10</span>
+
+<span class="hljs-built_in">println</span>(addOne(&amp;a))
+<span class="hljs-comment">// 输出11</span>
+<span class="hljs-built_in">println</span>(a)
+<span class="hljs-comment">// 输出 10</span>
+</code></pre>
+<h3 id="3.函数返回值">3.函数返回值</h3>
+
+<h4 id="3.1没有返回值">3.1没有返回值</h4>
+
+<pre><code class="lang-swift"><span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">sayGoodbye</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"Goodbye"</span>)
+}
+
+sayGoodbye()
+</code></pre>
+<p>严格意义上说，虽然没有返回值被定义，没有定义返回类型的函数会返回特殊的值<code>Void</code>，它其实是一个空的元组，没有任何元素，可以写成().</p>
+<p>被调用时，<strong>一个函数的返回值会被忽略</strong>：</p>
+<pre><code class="lang-swift"><span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">printAndCount</span> <span class="hljs-params">(stringToPrint:String)</span> -&gt; <span class="hljs-title">Int</span> </span>{
+    <span class="hljs-built_in">println</span>(stringToPrint)
+
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">count</span>(stringToPrint)
+}
+
+<span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">printWithoutCounting</span><span class="hljs-params">(stringToPrint:String)</span></span>{
+    printAndCount(stringToPrint)
+}
+
+<span class="hljs-keyword">var</span> a = printAndCount(<span class="hljs-string">"hello, world"</span>)
+<span class="hljs-comment">// 打印 "hello, world" 并且返回 12</span>
+printWithoutCounting(<span class="hljs-string">"hello, world"</span>)
+<span class="hljs-comment">//打印 "hello, world" 不返回值</span>
+</code></pre>
+<h4 id="3.2多个返回值">3.2多个返回值</h4>
+
+<p>可以用元组类型让多个值作为一个复合值从函数中返回。</p>
+<p>下面定义一个<code>count</code>函数，用来计算字符串中元音辅音和其他字母的个数。</p>
+<pre><code class="lang-swift"><span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">count</span><span class="hljs-params">(string: String)</span> -&gt; <span class="hljs-params">(vowels: Int, consonants: Int, others: Int)</span> </span>{
+    <span class="hljs-keyword">var</span> vowels = <span class="hljs-number">0</span>, consonants = <span class="hljs-number">0</span>, others = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">for</span> character <span class="hljs-keyword">in</span> string {
+        <span class="hljs-keyword">switch</span> <span class="hljs-type">String</span>(character).lowercaseString {
+        <span class="hljs-keyword">case</span> <span class="hljs-string">"a"</span>, <span class="hljs-string">"e"</span>, <span class="hljs-string">"i"</span>, <span class="hljs-string">"o"</span>, <span class="hljs-string">"u"</span>:
+            ++vowels
+        <span class="hljs-keyword">case</span> <span class="hljs-string">"b"</span>, <span class="hljs-string">"c"</span>, <span class="hljs-string">"d"</span>, <span class="hljs-string">"f"</span>, <span class="hljs-string">"g"</span>, <span class="hljs-string">"h"</span>, <span class="hljs-string">"j"</span>, <span class="hljs-string">"k"</span>, <span class="hljs-string">"l"</span>, <span class="hljs-string">"m"</span>,
+          <span class="hljs-string">"n"</span>, <span class="hljs-string">"p"</span>, <span class="hljs-string">"q"</span>, <span class="hljs-string">"r"</span>, <span class="hljs-string">"s"</span>, <span class="hljs-string">"t"</span>, <span class="hljs-string">"v"</span>, <span class="hljs-string">"w"</span>, <span class="hljs-string">"x"</span>, <span class="hljs-string">"y"</span>, <span class="hljs-string">"z"</span>:
+            ++consonants
+        <span class="hljs-keyword">default</span>:
+            ++others
+        }
+    }
+    <span class="hljs-keyword">return</span> (vowels, consonants, others)
+}
+</code></pre>
+<h3 id="4.函数类型">4.函数类型</h3>
+
+<p>每个函数都有特定的函数类型，由函数的参数类型和返回类型组成。</p>
+<pre><code class="lang-swift"><span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">addTwoInts</span><span class="hljs-params">(a: Int, b: Int)</span> -&gt; <span class="hljs-title">Int</span> </span>{
+    <span class="hljs-keyword">return</span> a + b
+}
+</code></pre>
+<p>这个函数的类型是<code>(Int,Int) -&gt; Int</code></p>
+<pre><code class="lang-swift"><span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">printHelloWorld</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"hello, world"</span>)
+}
+</code></pre>
+<p>这个函数的类型是<code>() -&gt; ()</code></p>
+<h4 id="4.1使用函数类型">4.1使用函数类型</h4>
+
+<p>使用函数类型和使用其他类型一样，可以定义一个类型为常量或变量，并将函数赋值给它。</p>
+<pre><code class="lang-swift"><span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">add</span><span class="hljs-params">(a:Int,b:Int)</span> -&gt;<span class="hljs-title">Int</span></span>{
+    <span class="hljs-keyword">return</span> a + b
+}
+<span class="hljs-comment">// var anotherAdd:(Int,Int) -&gt; Int =add</span>
+<span class="hljs-keyword">var</span> anotherAdd = add
+
+<span class="hljs-built_in">println</span>(anotherAdd(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>))
+</code></pre>
+<h4 id="4.2函数类型作为参数类型">4.2函数类型作为参数类型</h4>
+
+
+<pre><code class="lang-swift"><span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">printResult</span><span class="hljs-params">(a:Int,b:Int,add:<span class="hljs-params">(Int,Int)</span>-&gt;Int = add)</span></span>{
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"Result=<span class="hljs-subst">\(add(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>)</span>)"</span>)
+}
+
+printResult( <span class="hljs-number">2</span>, <span class="hljs-number">1</span>)
+<span class="hljs-comment">//Result=3</span>
+</code></pre>
+<h4 id="4.3函数类型作为返回值">4.3函数类型作为返回值</h4>
+
+<pre><code class="lang-swift">
+<span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">stepForWard</span><span class="hljs-params">(input:Int)</span>-&gt;<span class="hljs-title">Int</span></span>{
+    <span class="hljs-keyword">return</span> input + <span class="hljs-number">1</span>
+}
+
+<span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">stepBackward</span><span class="hljs-params">(input:Int)</span>-&gt;<span class="hljs-title">Int</span></span>{
+    <span class="hljs-keyword">return</span> input - <span class="hljs-number">1</span>
+}
+
+<span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">chooseStepFunction</span><span class="hljs-params">(backwards:Bool)</span> -&gt; <span class="hljs-params">(Int)</span>-&gt;<span class="hljs-title">Int</span></span>{
+    <span class="hljs-keyword">return</span> backwards ? stepBackward : stepForWard
+}
+
+<span class="hljs-keyword">var</span> currentValue = <span class="hljs-number">3</span>
+
+<span class="hljs-keyword">let</span> moveNearerToZero = chooseStepFunction(currentValue &gt; <span class="hljs-number">0</span>)
+
+<span class="hljs-keyword">while</span> currentValue != <span class="hljs-number">0</span> {
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"<span class="hljs-subst">\(currentValue)</span>"</span>)
+    currentValue=moveNearerToZero(currentValue)
+}
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">//3</span>
+<span class="hljs-comment">//2</span>
+<span class="hljs-comment">//1</span>
+</code></pre>
+<h4 id="4.4嵌套函数">4.4嵌套函数</h4>
+
+<p>你可以把函数定义在别的函数体内部，上面的例子可以修改为</p>
+<pre><code class="lang-swift">
+<span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">chooseStepFunction</span><span class="hljs-params">(backwards:Bool)</span> -&gt; <span class="hljs-params">(Int)</span>-&gt;<span class="hljs-title">Int</span></span>{
+
+    <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">stepForWard</span><span class="hljs-params">(input:Int)</span>-&gt;<span class="hljs-title">Int</span></span>{
+        <span class="hljs-keyword">return</span> input + <span class="hljs-number">1</span>
+    }
+
+    <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">stepBackward</span><span class="hljs-params">(input:Int)</span>-&gt;<span class="hljs-title">Int</span></span>{
+        <span class="hljs-keyword">return</span> input - <span class="hljs-number">1</span>
+    }
+
+    <span class="hljs-keyword">return</span> backwards ? stepBackward : stepForWard
+}
+
+<span class="hljs-keyword">var</span> currentValue = <span class="hljs-number">3</span>
+
+<span class="hljs-keyword">let</span> moveNearerToZero = chooseStepFunction(currentValue &gt; <span class="hljs-number">0</span>)
+
+<span class="hljs-keyword">while</span> currentValue != <span class="hljs-number">0</span> {
+    <span class="hljs-built_in">println</span>(<span class="hljs-string">"<span class="hljs-subst">\(currentValue)</span>"</span>)
+    currentValue=moveNearerToZero(currentValue)
+}
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">//3</span>
+<span class="hljs-comment">//2</span>
+<span class="hljs-comment">//1</span>
+</code></pre>
+<p>注意，如果参数有修饰符，返回里也需要在参数的类型前面明确指定修饰符，以符合内部的定义。</p>
+<pre><code class="lang-swift"><span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">makeIncrementor</span><span class="hljs-params">(addNumber: Int)</span> -&gt; <span class="hljs-params">(<span class="hljs-params">(<span class="hljs-keyword">inout</span> Int)</span> -&gt; <span class="hljs-params">()</span>)</span> </span>{
+    <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">incrementor</span><span class="hljs-params">(<span class="hljs-keyword">inout</span> variable: Int)</span> -&gt; <span class="hljs-params">()</span> </span>{
+        variable += addNumber;
+    }
+<span class="hljs-keyword">return</span> incrementor; }
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./控制语句.html" class="navigation navigation-prev " aria-label="Previous page: 控制语句"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./闭包.html" class="navigation navigation-next " aria-label="Next page: 闭包"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
